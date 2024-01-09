@@ -1,0 +1,830 @@
+2024-01-08 17:08:35,835 INFO    StreamThr :19121 [internal.py:wandb_internal():86] W&B internal server running at pid: 19121, started at: 2024-01-08 17:08:35.834844
+2024-01-08 17:08:35,837 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status
+2024-01-08 17:08:35,844 INFO    WriterThread:19121 [datastore.py:open_for_write():85] open: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/run-hmo5xwmy.wandb
+2024-01-08 17:08:35,845 DEBUG   SenderThread:19121 [sender.py:send():382] send: header
+2024-01-08 17:08:35,850 DEBUG   SenderThread:19121 [sender.py:send():382] send: run
+2024-01-08 17:08:36,357 INFO    SenderThread:19121 [dir_watcher.py:__init__():211] watching files in: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files
+2024-01-08 17:08:36,358 INFO    SenderThread:19121 [sender.py:_start_run_threads():1136] run started: hmo5xwmy with start time 1704730115.83453
+2024-01-08 17:08:36,372 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: check_version
+2024-01-08 17:08:36,373 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: check_version
+2024-01-08 17:08:36,526 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: run_start
+2024-01-08 17:08:36,546 DEBUG   HandlerThread:19121 [system_info.py:__init__():32] System info init
+2024-01-08 17:08:36,546 DEBUG   HandlerThread:19121 [system_info.py:__init__():47] System info init done
+2024-01-08 17:08:36,546 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:08:36,546 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:08:36,547 INFO    HandlerThread:19121 [system_monitor.py:probe():214] Collecting system info
+2024-01-08 17:08:36,548 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:08:36,549 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started disk monitoring
+2024-01-08 17:08:36,550 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started gpu monitoring
+2024-01-08 17:08:36,550 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started memory monitoring
+2024-01-08 17:08:36,551 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started network monitoring
+2024-01-08 17:08:36,560 DEBUG   HandlerThread:19121 [system_info.py:probe():196] Probing system
+2024-01-08 17:08:36,562 DEBUG   HandlerThread:19121 [system_info.py:_probe_git():181] Probing git
+2024-01-08 17:08:36,568 DEBUG   HandlerThread:19121 [system_info.py:_probe_git():189] Probing git done
+2024-01-08 17:08:36,568 DEBUG   HandlerThread:19121 [system_info.py:probe():244] Probing system done
+2024-01-08 17:08:36,568 DEBUG   HandlerThread:19121 [system_monitor.py:probe():223] {'os': 'Linux-6.2.0-39-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-01-08T16:08:36.560132', 'startedAt': '2024-01-08T16:08:35.828760', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/jcroneDK/kaggle.git', 'commit': 'afbab9a7196adc9f17f693d9ffeb5e64f216bfe8'}, 'email': 'jcrone@pm.me', 'root': '/home/jo/code/kaggle', 'host': 'jo-Ub', 'username': 'jo', 'executable': '/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2.9998333333333336, 'min': 800.0, 'max': 4500.0}, 'cpu_freq_per_core': [{'current': 3.0, 'min': 800.0, 'max': 4500.0}, {'current': 3.0, 'min': 800.0, 'max': 4500.0}, {'current': 3.0, 'min': 800.0, 'max': 4500.0}, {'current': 3.0, 'min': 800.0, 'max': 4500.0}, {'current': 3.0, 'min': 800.0, 'max': 4500.0}, {'current': 3.002, 'min': 800.0, 'max': 4500.0}, {'current': 2.999, 'min': 800.0, 'max': 4500.0}, {'current': 3.0, 'min': 800.0, 'max': 4500.0}, {'current': 2.999, 'min': 800.0, 'max': 4500.0}, {'current': 3.0, 'min': 800.0, 'max': 4500.0}, {'current': 3.0, 'min': 800.0, 'max': 4500.0}, {'current': 2.999, 'min': 800.0, 'max': 4500.0}], 'disk': {'/': {'total': 287.30792236328125, 'used': 111.73369979858398}}, 'gpu': 'NVIDIA GeForce GTX 1650', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1650', 'memory_total': 4294967296}], 'memory': {'total': 30.948566436767578}}
+2024-01-08 17:08:36,568 INFO    HandlerThread:19121 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-08 17:08:36,568 INFO    HandlerThread:19121 [system_monitor.py:probe():227] Publishing system info
+2024-01-08 17:08:36,568 DEBUG   HandlerThread:19121 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-01-08 17:08:36,569 DEBUG   HandlerThread:19121 [system_info.py:_save_pip():68] Saving pip packages done
+2024-01-08 17:08:36,569 INFO    HandlerThread:19121 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-08 17:08:36,575 DEBUG   SenderThread:19121 [sender.py:send():382] send: files
+2024-01-08 17:08:36,575 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-01-08 17:08:36,586 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-08 17:08:36,586 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: stop_status
+2024-01-08 17:08:36,589 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-08 17:08:36,590 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 17:08:36,590 INFO    HandlerThread:19121 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 17:08:36,590 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:08:36,590 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:08:36,590 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:08:36,590 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:08:36,590 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:08:36,591 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined disk monitor
+2024-01-08 17:08:36,662 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-08 17:08:36,662 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined memory monitor
+2024-01-08 17:08:36,662 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined network monitor
+2024-01-08 17:08:36,662 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: resume
+2024-01-08 17:08:36,662 INFO    HandlerThread:19121 [handler.py:handle_request_resume():696] starting system metrics thread
+2024-01-08 17:08:36,663 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:08:36,663 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:08:36,663 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 17:08:36,663 INFO    HandlerThread:19121 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 17:08:36,663 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:08:36,664 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:08:36,664 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:08:36,664 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:08:36,664 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:08:36,665 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:08:36,667 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: resume
+2024-01-08 17:08:36,668 INFO    HandlerThread:19121 [handler.py:handle_request_resume():696] starting system metrics thread
+2024-01-08 17:08:36,668 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:08:36,668 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:08:36,668 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:08:36,668 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started disk monitoring
+2024-01-08 17:08:36,669 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started gpu monitoring
+2024-01-08 17:08:36,670 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started memory monitoring
+2024-01-08 17:08:36,670 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started network monitoring
+2024-01-08 17:08:36,967 DEBUG   SenderThread:19121 [sender.py:send():382] send: telemetry
+2024-01-08 17:08:36,967 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:08:36,967 DEBUG   SenderThread:19121 [sender.py:send():382] send: telemetry
+2024-01-08 17:08:36,967 DEBUG   SenderThread:19121 [sender.py:send():382] send: metric
+2024-01-08 17:08:36,967 DEBUG   SenderThread:19121 [sender.py:send():382] send: telemetry
+2024-01-08 17:08:36,967 DEBUG   SenderThread:19121 [sender.py:send():382] send: metric
+2024-01-08 17:08:36,967 WARNING SenderThread:19121 [sender.py:send_metric():1343] Seen metric with glob (shouldn't happen)
+2024-01-08 17:08:36,967 DEBUG   SenderThread:19121 [sender.py:send():382] send: telemetry
+2024-01-08 17:08:36,968 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:08:37,322 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 17:08:37,322 INFO    HandlerThread:19121 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 17:08:37,322 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:08:37,322 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:08:37,322 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:08:37,322 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:08:37,323 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined disk monitor
+2024-01-08 17:08:37,323 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:08:37,358 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:08:37,358 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/requirements.txt
+2024-01-08 17:08:37,358 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-metadata.json
+2024-01-08 17:08:37,361 INFO    wandb-upload_0:19121 [upload_job.py:push():131] Uploaded file /tmp/tmpqu2cndqxwandb/grt38chc-wandb-metadata.json
+2024-01-08 17:08:37,399 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-08 17:08:37,399 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined memory monitor
+2024-01-08 17:08:37,399 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined network monitor
+2024-01-08 17:08:37,399 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: resume
+2024-01-08 17:08:37,400 INFO    HandlerThread:19121 [handler.py:handle_request_resume():696] starting system metrics thread
+2024-01-08 17:08:37,400 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:08:37,400 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:08:37,400 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:08:37,400 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 17:08:37,401 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:08:37,401 INFO    HandlerThread:19121 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 17:08:37,401 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started disk monitoring
+2024-01-08 17:08:37,401 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:08:37,402 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started gpu monitoring
+2024-01-08 17:08:37,402 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:08:37,402 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:08:37,402 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:08:37,403 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:08:37,404 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined disk monitor
+2024-01-08 17:08:37,469 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-08 17:08:37,469 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: resume
+2024-01-08 17:08:37,469 INFO    HandlerThread:19121 [handler.py:handle_request_resume():696] starting system metrics thread
+2024-01-08 17:08:37,469 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:08:37,470 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:08:37,470 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:08:37,470 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 17:08:37,471 INFO    HandlerThread:19121 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 17:08:37,471 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:08:37,471 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:08:37,471 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started disk monitoring
+2024-01-08 17:08:37,471 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:08:37,472 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:08:37,472 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:08:37,473 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:08:37,474 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined disk monitor
+2024-01-08 17:08:37,474 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:08:37,516 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: resume
+2024-01-08 17:08:37,516 INFO    HandlerThread:19121 [handler.py:handle_request_resume():696] starting system metrics thread
+2024-01-08 17:08:37,516 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:08:37,516 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:08:37,517 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:08:37,517 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started disk monitoring
+2024-01-08 17:08:37,517 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 17:08:37,518 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started gpu monitoring
+2024-01-08 17:08:37,518 INFO    HandlerThread:19121 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 17:08:37,518 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started memory monitoring
+2024-01-08 17:08:37,518 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:08:37,519 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started network monitoring
+2024-01-08 17:08:37,520 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:08:37,520 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:08:37,520 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:08:37,521 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:08:37,522 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined disk monitor
+2024-01-08 17:08:37,602 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-08 17:08:37,602 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined memory monitor
+2024-01-08 17:08:37,602 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined network monitor
+2024-01-08 17:08:37,602 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: resume
+2024-01-08 17:08:37,602 INFO    HandlerThread:19121 [handler.py:handle_request_resume():696] starting system metrics thread
+2024-01-08 17:08:37,602 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:08:37,603 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:08:37,603 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 17:08:37,603 INFO    HandlerThread:19121 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 17:08:37,603 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:08:37,603 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:08:37,604 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:08:37,603 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:08:37,604 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:08:37,604 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:08:37,605 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:08:37,605 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:08:37,644 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: resume
+2024-01-08 17:08:37,644 INFO    HandlerThread:19121 [handler.py:handle_request_resume():696] starting system metrics thread
+2024-01-08 17:08:37,644 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:08:37,644 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:08:37,645 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:08:37,645 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started disk monitoring
+2024-01-08 17:08:37,646 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started gpu monitoring
+2024-01-08 17:08:37,646 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started memory monitoring
+2024-01-08 17:08:37,647 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started network monitoring
+2024-01-08 17:08:39,358 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:08:39,901 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:39,903 DEBUG   SenderThread:19121 [sender.py:send():382] send: metric
+2024-01-08 17:08:39,903 DEBUG   SenderThread:19121 [sender.py:send():382] send: metric
+2024-01-08 17:08:39,903 DEBUG   SenderThread:19121 [sender.py:send():382] send: metric
+2024-01-08 17:08:39,903 DEBUG   SenderThread:19121 [sender.py:send():382] send: metric
+2024-01-08 17:08:39,903 DEBUG   SenderThread:19121 [sender.py:send():382] send: metric
+2024-01-08 17:08:39,903 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:08:39,903 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:08:39,904 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:08:40,358 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:08:40,646 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:40,647 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:08:40,742 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:41,363 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:41,364 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:08:41,447 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:42,030 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:42,129 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:42,619 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpmkwhhdkg
+2024-01-08 17:08:42,656 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpv99ueqs9
+2024-01-08 17:08:42,663 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpdnub1c8u
+2024-01-08 17:08:42,666 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpusrpil7r
+2024-01-08 17:08:42,738 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:42,864 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:42,883 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp48g08le3
+2024-01-08 17:08:43,439 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:43,572 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:43,716 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg3ODcy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': None}}
+2024-01-08 17:08:43,716 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:08:43,716 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:08:43,718 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:08:43,718 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:08:43,718 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:08:44,141 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:44,225 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:44,365 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:08:44,580 INFO    wandb-upload_4:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmp9l5p5icu
+2024-01-08 17:08:44,895 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:44,979 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:45,248 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpwepeaai1
+2024-01-08 17:08:45,248 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp_rot1sc9
+2024-01-08 17:08:45,248 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpxfye5je6
+2024-01-08 17:08:45,286 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpafszmo12
+2024-01-08 17:08:45,365 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:08:45,566 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:45,675 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:46,108 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg3ODg5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg3ODcy', 'versionIndex': 0}}}
+2024-01-08 17:08:46,109 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:08:46,109 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:08:46,110 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:08:46,110 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:08:46,312 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:46,365 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:08:46,396 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:47,024 INFO    wandb-upload_1:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpcnl9j5f3
+2024-01-08 17:08:47,054 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:47,153 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:47,365 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:08:47,646 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp0x9tdw67
+2024-01-08 17:08:47,646 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpwnyfsnvg
+2024-01-08 17:08:47,647 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpxsu06o6o
+2024-01-08 17:08:47,842 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:47,943 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:48,259 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmppky6xz0a
+2024-01-08 17:08:48,527 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:48,664 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:49,090 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg3OTMx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg3ODg5', 'versionIndex': 1}}}
+2024-01-08 17:08:49,090 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:08:49,091 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:08:49,091 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:08:49,092 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:08:49,092 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:08:49,367 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:08:49,463 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:49,605 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:50,143 INFO    wandb-upload_2:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpqt5xaqax
+2024-01-08 17:08:50,183 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:50,274 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:50,736 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpd475oc8l
+2024-01-08 17:08:50,759 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpzyz8pjo2
+2024-01-08 17:08:50,760 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpr7y09c8r
+2024-01-08 17:08:50,853 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpust8wiqb
+2024-01-08 17:08:50,959 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:51,091 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:51,367 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:08:51,587 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-08 17:08:51,589 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-08 17:08:51,717 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg3OTYx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg3OTMx', 'versionIndex': 2}}}
+2024-01-08 17:08:51,718 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:08:51,718 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:08:51,720 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:08:51,721 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:08:51,759 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:51,870 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:52,367 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:08:52,523 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:52,638 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:52,929 INFO    wandb-upload_1:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpz481clmo
+2024-01-08 17:08:53,240 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:53,320 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:53,368 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:08:53,542 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp5eeunbkl
+2024-01-08 17:08:53,543 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp25ptlfj7
+2024-01-08 17:08:53,543 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpsut7xgg2
+2024-01-08 17:08:53,604 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpeffxe7g9
+2024-01-08 17:08:53,974 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:54,066 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:54,433 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg3OTc2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg3OTYx', 'versionIndex': 3}}}
+2024-01-08 17:08:54,433 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:08:54,433 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:08:54,433 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:08:54,434 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:08:54,434 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:08:54,672 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:54,769 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:55,369 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:08:55,370 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:08:55,498 INFO    wandb-upload_0:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmp4qwblv0o
+2024-01-08 17:08:56,110 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpl53qas5o
+2024-01-08 17:08:56,110 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmprvlxwcv3
+2024-01-08 17:08:56,112 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpiu9v1isu
+2024-01-08 17:08:56,199 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp7fvs98j2
+2024-01-08 17:08:56,593 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:08:56,717 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:56,810 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:57,130 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg3OTk3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg3OTc2', 'versionIndex': 4}}}
+2024-01-08 17:08:57,130 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:08:57,130 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:08:57,131 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:08:57,131 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:08:57,370 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:08:57,482 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:57,616 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:58,170 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:58,300 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:58,752 INFO    wandb-upload_1:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpnq7brqk9
+2024-01-08 17:08:58,917 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:59,001 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:08:59,207 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp6dry971k
+2024-01-08 17:08:59,207 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp573r_7g9
+2024-01-08 17:08:59,238 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpo9jfpd34
+2024-01-08 17:08:59,312 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpizjpg3v3
+2024-01-08 17:08:59,371 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:08:59,621 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:08:59,737 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:09:00,228 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MDIy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg3OTk3', 'versionIndex': 5}}}
+2024-01-08 17:09:00,229 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:00,230 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:00,231 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:00,232 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:00,233 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:00,315 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:09:00,371 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:00,435 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:09:01,066 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:09:01,156 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:09:01,338 INFO    wandb-upload_0:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmppwvyy272
+2024-01-08 17:09:01,371 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:01,602 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:01,828 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:09:01,935 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp0l2sjuf6
+2024-01-08 17:09:01,945 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpkwr3shf4
+2024-01-08 17:09:01,953 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpwf5okwkf
+2024-01-08 17:09:01,971 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:09:02,025 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp3jtv_4_q
+2024-01-08 17:09:02,579 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:09:02,702 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:09:02,860 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MDQ4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MDIy', 'versionIndex': 6}}}
+2024-01-08 17:09:02,860 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:02,860 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:02,861 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:02,861 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:03,375 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:03,515 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-08 17:09:03,528 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 17:09:03,529 INFO    HandlerThread:19121 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 17:09:03,529 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:09:03,529 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:09:03,529 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined disk monitor
+2024-01-08 17:09:03,530 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:09:03,530 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:09:03,530 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:09:03,608 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-08 17:09:03,608 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined memory monitor
+2024-01-08 17:09:03,608 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined network monitor
+2024-01-08 17:09:03,608 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: resume
+2024-01-08 17:09:03,609 INFO    HandlerThread:19121 [handler.py:handle_request_resume():696] starting system metrics thread
+2024-01-08 17:09:03,609 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:09:03,609 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:09:03,609 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:09:03,609 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started disk monitoring
+2024-01-08 17:09:03,610 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started gpu monitoring
+2024-01-08 17:09:03,610 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started memory monitoring
+2024-01-08 17:09:03,610 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started network monitoring
+2024-01-08 17:09:03,656 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-08 17:09:03,657 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 17:09:03,657 INFO    HandlerThread:19121 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 17:09:03,657 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:09:03,657 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:09:03,658 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:09:03,658 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:09:03,658 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined disk monitor
+2024-01-08 17:09:03,658 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:09:03,728 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-08 17:09:03,729 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined memory monitor
+2024-01-08 17:09:03,729 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined network monitor
+2024-01-08 17:09:03,729 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: resume
+2024-01-08 17:09:03,729 INFO    HandlerThread:19121 [handler.py:handle_request_resume():696] starting system metrics thread
+2024-01-08 17:09:03,730 INFO    HandlerThread:19121 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 17:09:03,730 INFO    SystemMonitor:19121 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 17:09:03,730 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 17:09:03,730 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started disk monitoring
+2024-01-08 17:09:03,731 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started gpu monitoring
+2024-01-08 17:09:03,732 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started memory monitoring
+2024-01-08 17:09:03,733 INFO    SystemMonitor:19121 [interfaces.py:start():190] Started network monitoring
+2024-01-08 17:09:03,894 INFO    wandb-upload_4:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpre6j9oq2
+2024-01-08 17:09:04,378 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpfrt46blk
+2024-01-08 17:09:04,379 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp54zg_l6l
+2024-01-08 17:09:04,392 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpbnnml3sf
+2024-01-08 17:09:04,484 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpahqbw7tx
+2024-01-08 17:09:04,683 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-08 17:09:05,379 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:05,422 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MDcz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MDQ4', 'versionIndex': 7}}}
+2024-01-08 17:09:05,422 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:05,423 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:05,423 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:05,424 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:05,424 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:06,380 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:06,449 INFO    wandb-upload_3:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmp9uoy58x9
+2024-01-08 17:09:07,170 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpj8n3s3dh
+2024-01-08 17:09:07,171 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpxse1kj0g
+2024-01-08 17:09:07,172 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp5poug4he
+2024-01-08 17:09:07,228 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpyv8azef4
+2024-01-08 17:09:07,380 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:08,289 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MDk2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MDcz', 'versionIndex': 8}}}
+2024-01-08 17:09:08,289 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:08,289 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:08,290 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:08,291 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:08,381 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:09,382 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:09,525 INFO    wandb-upload_4:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpont43c0m
+2024-01-08 17:09:09,684 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:10,131 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp6sqfu28c
+2024-01-08 17:09:10,132 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpoism6_p7
+2024-01-08 17:09:10,138 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpcbq5v4dl
+2024-01-08 17:09:10,155 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpq7h9cioa
+2024-01-08 17:09:11,260 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MTE3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MDk2', 'versionIndex': 9}}}
+2024-01-08 17:09:11,265 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:11,578 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:11,579 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:11,583 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:11,584 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:12,384 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/config.yaml
+2024-01-08 17:09:12,384 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:12,802 INFO    wandb-upload_1:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmprvierljo
+2024-01-08 17:09:13,384 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:13,409 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmprni1s0ky
+2024-01-08 17:09:13,409 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpdjzxd61r
+2024-01-08 17:09:13,409 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpbu1i2gqh
+2024-01-08 17:09:13,515 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp74uflgvh
+2024-01-08 17:09:14,534 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MTQ0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MTE3', 'versionIndex': 10}}}
+2024-01-08 17:09:14,534 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:14,534 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:14,535 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:14,536 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:14,685 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:15,385 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:15,386 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:15,667 INFO    wandb-upload_4:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpcuv98xq9
+2024-01-08 17:09:16,275 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpmzql25_g
+2024-01-08 17:09:16,281 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp49pfncj6
+2024-01-08 17:09:16,282 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp3eumkfx2
+2024-01-08 17:09:16,302 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpojdsm8k6
+2024-01-08 17:09:17,299 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MTc5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MTQ0', 'versionIndex': 11}}}
+2024-01-08 17:09:17,299 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:17,299 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:17,300 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:17,301 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:17,301 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:17,386 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:18,431 INFO    wandb-upload_1:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmprdu_qf2v
+2024-01-08 17:09:19,150 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpjo0fg2ms
+2024-01-08 17:09:19,151 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpgu8qvf6u
+2024-01-08 17:09:19,152 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmphk1if80t
+2024-01-08 17:09:19,209 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpssh2xpom
+2024-01-08 17:09:19,391 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:19,687 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:20,070 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MjA2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MTc5', 'versionIndex': 12}}}
+2024-01-08 17:09:20,070 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:20,071 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:20,072 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:20,073 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:20,392 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:21,298 INFO    wandb-upload_3:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpar6a356r
+2024-01-08 17:09:21,395 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:21,929 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp3xjdetg3
+2024-01-08 17:09:21,936 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp_ua7y23q
+2024-01-08 17:09:21,947 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpkldnhqkm
+2024-01-08 17:09:22,059 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp3ka9aw29
+2024-01-08 17:09:23,039 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MjI4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MjA2', 'versionIndex': 13}}}
+2024-01-08 17:09:23,039 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:23,039 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:23,039 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:23,040 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:23,040 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: stop_status
+2024-01-08 17:09:23,239 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:23,396 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:24,477 INFO    wandb-upload_2:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmp9yugwnsx
+2024-01-08 17:09:24,688 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:25,095 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpwo08yzdr
+2024-01-08 17:09:25,125 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpe0j1j6kf
+2024-01-08 17:09:25,218 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpwfwszl6x
+2024-01-08 17:09:25,230 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpsbvouawg
+2024-01-08 17:09:25,398 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:26,398 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:27,644 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4Mjcx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MjI4', 'versionIndex': 14}}}
+2024-01-08 17:09:27,645 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:27,645 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:27,646 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:27,646 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:28,400 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:28,782 INFO    wandb-upload_4:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmp70ztv3x2
+2024-01-08 17:09:29,400 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:29,424 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpnsiuqcmn
+2024-01-08 17:09:29,431 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmplxm_ltjt
+2024-01-08 17:09:29,446 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpmfghm_oz
+2024-01-08 17:09:29,536 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp9ircrdf3
+2024-01-08 17:09:29,690 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:30,401 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:30,614 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MzAw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4Mjcx', 'versionIndex': 15}}}
+2024-01-08 17:09:30,615 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:30,616 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:30,617 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:30,618 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:30,620 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:31,401 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:31,401 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:31,599 INFO    wandb-upload_3:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmp3va0nhrf
+2024-01-08 17:09:32,198 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpg7wtz_95
+2024-01-08 17:09:32,200 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpyq273hgu
+2024-01-08 17:09:32,212 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpomm5evfx
+2024-01-08 17:09:32,330 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpsa3ds1mi
+2024-01-08 17:09:32,402 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:33,215 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MzIy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MzAw', 'versionIndex': 16}}}
+2024-01-08 17:09:33,216 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:33,216 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:33,218 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:33,219 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:33,402 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:34,200 INFO    wandb-upload_1:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpedzy7if3
+2024-01-08 17:09:34,691 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:34,919 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpswr0c0d1
+2024-01-08 17:09:34,920 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp43f8rh4c
+2024-01-08 17:09:34,922 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpqvqvftkm
+2024-01-08 17:09:34,930 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpuih6lh0y
+2024-01-08 17:09:35,403 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:36,042 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MzM3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MzIy', 'versionIndex': 17}}}
+2024-01-08 17:09:36,042 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:36,043 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:36,044 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:36,045 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:36,047 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:36,408 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:36,408 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:37,175 INFO    wandb-upload_0:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpulvja3fc
+2024-01-08 17:09:37,408 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:37,685 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpukk_h0tx
+2024-01-08 17:09:37,686 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpas2ubze4
+2024-01-08 17:09:37,687 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpw6hd6jud
+2024-01-08 17:09:37,763 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpl9ehqcb0
+2024-01-08 17:09:38,409 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:38,702 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4MzYx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MzM3', 'versionIndex': 18}}}
+2024-01-08 17:09:38,702 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:38,702 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:38,703 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:38,703 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:39,410 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:39,410 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:39,693 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:39,832 INFO    wandb-upload_1:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpwi_rl210
+2024-01-08 17:09:40,410 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:40,549 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp5767hjsa
+2024-01-08 17:09:40,550 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpiap289gs
+2024-01-08 17:09:40,550 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp0nilb0lr
+2024-01-08 17:09:40,594 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpl4hmuaf6
+2024-01-08 17:09:41,570 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4Mzc0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4MzYx', 'versionIndex': 19}}}
+2024-01-08 17:09:41,571 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:41,571 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:41,571 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:41,572 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:41,572 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:42,410 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:42,552 INFO    wandb-upload_3:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpux_ca1e6
+2024-01-08 17:09:43,214 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp0toc_atx
+2024-01-08 17:09:43,216 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmplka7nehw
+2024-01-08 17:09:43,217 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpqbcxbkkq
+2024-01-08 17:09:43,231 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpq71cyxef
+2024-01-08 17:09:43,412 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:44,242 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4Mzk3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4Mzc0', 'versionIndex': 20}}}
+2024-01-08 17:09:44,242 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:44,243 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:44,248 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:44,249 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:44,412 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:44,413 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:44,694 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:45,413 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:45,467 INFO    wandb-upload_2:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmphb41excm
+2024-01-08 17:09:46,182 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpoig5mdbh
+2024-01-08 17:09:46,182 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp9z1l40ll
+2024-01-08 17:09:46,209 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpvzxvmo5q
+2024-01-08 17:09:46,244 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpn5kfi32j
+2024-01-08 17:09:46,414 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:47,312 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4NDMy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4Mzk3', 'versionIndex': 21}}}
+2024-01-08 17:09:47,313 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:47,313 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:47,314 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:47,316 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:47,317 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:47,416 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:48,536 INFO    wandb-upload_3:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmp54vvlrcj
+2024-01-08 17:09:49,152 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp56705k9b
+2024-01-08 17:09:49,152 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpqjhy7cyg
+2024-01-08 17:09:49,250 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp3wqxjamu
+2024-01-08 17:09:49,251 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpaizuxylg
+2024-01-08 17:09:49,417 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:49,696 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:50,396 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4NDU3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4NDMy', 'versionIndex': 22}}}
+2024-01-08 17:09:50,396 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:50,397 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:50,399 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:50,400 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:50,417 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:50,417 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:51,418 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:51,507 INFO    wandb-upload_0:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpqsg9vars
+2024-01-08 17:09:52,019 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmprxhgi_h9
+2024-01-08 17:09:52,019 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpbqcq5_dm
+2024-01-08 17:09:52,019 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpf19dbn8d
+2024-01-08 17:09:52,082 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpqzegi1_4
+2024-01-08 17:09:52,419 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:53,148 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4NDk3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4NDU3', 'versionIndex': 23}}}
+2024-01-08 17:09:53,149 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:53,149 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:53,150 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:53,151 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:53,152 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:53,419 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:53,420 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:54,070 INFO    wandb-upload_2:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpq0vxuyjy
+2024-01-08 17:09:54,698 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:09:54,790 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp7yjkyioa
+2024-01-08 17:09:54,794 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpwov265mq
+2024-01-08 17:09:54,797 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpgpp0x1u0
+2024-01-08 17:09:54,799 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpcgl9mlpx
+2024-01-08 17:09:55,804 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4NTIy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4NDk3', 'versionIndex': 24}}}
+2024-01-08 17:09:55,804 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:55,804 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:55,805 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:55,805 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:56,421 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:56,421 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:56,845 INFO    wandb-upload_0:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmp4_2cqxj9
+2024-01-08 17:09:57,422 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:57,448 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmperje7jne
+2024-01-08 17:09:57,449 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpzv5ooov6
+2024-01-08 17:09:57,452 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpngmhxt9f
+2024-01-08 17:09:57,586 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmptffkv87t
+2024-01-08 17:09:58,422 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:58,544 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4NTU3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4NTIy', 'versionIndex': 25}}}
+2024-01-08 17:09:58,544 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:09:58,545 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:09:58,546 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:09:58,547 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:09:58,549 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:09:59,423 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:09:59,423 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:09:59,526 INFO    wandb-upload_4:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpb2gkmpni
+2024-01-08 17:09:59,699 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:10:00,108 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpy46ahp68
+2024-01-08 17:10:00,108 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmprwyuw20n
+2024-01-08 17:10:00,109 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpgxdz0rf4
+2024-01-08 17:10:00,232 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpysco6z7_
+2024-01-08 17:10:00,423 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:10:01,258 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4NTg2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4NTU3', 'versionIndex': 26}}}
+2024-01-08 17:10:01,259 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:10:01,260 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:10:01,261 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:10:01,262 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:10:01,424 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:10:02,364 INFO    wandb-upload_3:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpl33bmk87
+2024-01-08 17:10:02,870 INFO    wandb-upload_2:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpe925suyk
+2024-01-08 17:10:02,870 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp9qv42ai3
+2024-01-08 17:10:02,874 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpc2stcxhm
+2024-01-08 17:10:02,996 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpxrz1154t
+2024-01-08 17:10:03,425 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:10:03,734 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 17:10:04,045 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4NjEx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4NTg2', 'versionIndex': 27}}}
+2024-01-08 17:10:04,045 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:10:04,045 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:10:04,046 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:10:04,047 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:10:04,047 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: log_artifact
+2024-01-08 17:10:04,426 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:10:04,427 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:10:04,700 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-08 17:10:05,234 INFO    wandb-upload_2:19121 [upload_job.py:push():86] Skipped uploading /home/jo/.local/share/wandb/artifacts/staging/tmpjmmafp8k
+2024-01-08 17:10:05,426 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:10:05,763 INFO    wandb-upload_1:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpkufywbtn
+2024-01-08 17:10:05,774 INFO    wandb-upload_4:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmphbuuufrn
+2024-01-08 17:10:05,774 INFO    wandb-upload_3:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmp0arnpubp
+2024-01-08 17:10:05,880 INFO    wandb-upload_0:19121 [upload_job.py:push():89] Uploaded file /home/jo/.local/share/wandb/artifacts/staging/tmpxzr7t7lz
+2024-01-08 17:10:06,427 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:10:06,863 INFO    SenderThread:19121 [sender.py:send_request_log_artifact():1458] logged artifact run_hmo5xwmy_model - {'id': 'QXJ0aWZhY3Q6Njg0OTg4NjMz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODM5ODE4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg0OTg4NjEx', 'versionIndex': 28}}}
+2024-01-08 17:10:06,864 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:10:06,864 DEBUG   SenderThread:19121 [sender.py:send():382] send: history
+2024-01-08 17:10:06,864 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: summary_record
+2024-01-08 17:10:06,865 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:10:06,865 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:10:06,866 DEBUG   SenderThread:19121 [sender.py:send():382] send: telemetry
+2024-01-08 17:10:06,866 DEBUG   SenderThread:19121 [sender.py:send():382] send: exit
+2024-01-08 17:10:06,866 INFO    SenderThread:19121 [sender.py:send_exit():589] handling exit code: 0
+2024-01-08 17:10:06,866 INFO    SenderThread:19121 [sender.py:send_exit():591] handling runtime: 27
+2024-01-08 17:10:06,870 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:10:06,871 INFO    SenderThread:19121 [sender.py:send_exit():597] send defer
+2024-01-08 17:10:06,871 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: poll_exit
+2024-01-08 17:10:06,872 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:10:06,873 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:06,874 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-08 17:10:06,875 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:06,875 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-08 17:10:06,875 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 1
+2024-01-08 17:10:06,876 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:06,876 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-08 17:10:06,877 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:06,877 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-08 17:10:06,877 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 2
+2024-01-08 17:10:06,877 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:06,878 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-08 17:10:06,878 INFO    HandlerThread:19121 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 17:10:06,879 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 17:10:06,879 DEBUG   SystemMonitor:19121 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 17:10:06,882 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 17:10:06,882 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined disk monitor
+2024-01-08 17:10:06,977 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-08 17:10:06,977 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined memory monitor
+2024-01-08 17:10:06,977 INFO    HandlerThread:19121 [interfaces.py:finish():202] Joined network monitor
+2024-01-08 17:10:06,978 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:06,978 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-08 17:10:06,978 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 3
+2024-01-08 17:10:06,978 DEBUG   SenderThread:19121 [sender.py:send():382] send: stats
+2024-01-08 17:10:06,978 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:06,978 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-08 17:10:06,978 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:06,978 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-08 17:10:06,978 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 4
+2024-01-08 17:10:06,979 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:06,979 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-08 17:10:06,979 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:06,979 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-08 17:10:06,979 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 5
+2024-01-08 17:10:06,979 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:06,979 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-08 17:10:06,979 DEBUG   SenderThread:19121 [sender.py:send():382] send: summary
+2024-01-08 17:10:06,980 INFO    SenderThread:19121 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-08 17:10:06,980 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:06,980 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-08 17:10:06,980 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 6
+2024-01-08 17:10:06,980 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:06,980 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-08 17:10:06,980 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:06,980 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-08 17:10:06,983 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 17:10:07,377 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 7
+2024-01-08 17:10:07,377 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:07,378 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-08 17:10:07,378 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:07,378 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-08 17:10:07,428 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/config.yaml
+2024-01-08 17:10:07,429 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:10:07,702 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-08 17:10:08,428 INFO    Thread-12 :19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:10:09,641 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 8
+2024-01-08 17:10:09,641 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: poll_exit
+2024-01-08 17:10:09,642 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:09,642 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-08 17:10:09,643 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:09,643 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-08 17:10:09,644 INFO    SenderThread:19121 [job_builder.py:build():298] Attempting to build job artifact
+2024-01-08 17:10:09,645 INFO    SenderThread:19121 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-01-08 17:10:09,645 INFO    SenderThread:19121 [job_builder.py:_get_program_relpath():446] run is notebook based run
+2024-01-08 17:10:09,645 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 9
+2024-01-08 17:10:09,645 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:09,646 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-08 17:10:09,647 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:09,647 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-01-08 17:10:09,647 INFO    SenderThread:19121 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-08 17:10:09,712 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-08 17:10:10,429 INFO    SenderThread:19121 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:10:10,431 INFO    SenderThread:19121 [dir_watcher.py:finish():388] scan: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files
+2024-01-08 17:10:10,431 INFO    SenderThread:19121 [dir_watcher.py:finish():402] scan save: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-metadata.json wandb-metadata.json
+2024-01-08 17:10:10,431 INFO    SenderThread:19121 [dir_watcher.py:finish():402] scan save: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log output.log
+2024-01-08 17:10:10,432 INFO    SenderThread:19121 [dir_watcher.py:finish():402] scan save: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/config.yaml config.yaml
+2024-01-08 17:10:10,439 INFO    SenderThread:19121 [dir_watcher.py:finish():402] scan save: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json wandb-summary.json
+2024-01-08 17:10:10,446 INFO    SenderThread:19121 [dir_watcher.py:finish():402] scan save: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/requirements.txt requirements.txt
+2024-01-08 17:10:10,446 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 10
+2024-01-08 17:10:10,446 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: poll_exit
+2024-01-08 17:10:10,447 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:10,447 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-08 17:10:10,448 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:10,448 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-01-08 17:10:10,448 INFO    SenderThread:19121 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-08 17:10:10,712 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-08 17:10:10,713 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: poll_exit
+2024-01-08 17:10:10,863 INFO    wandb-upload_4:19121 [upload_job.py:push():131] Uploaded file /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/config.yaml
+2024-01-08 17:10:10,991 INFO    wandb-upload_2:19121 [upload_job.py:push():131] Uploaded file /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/output.log
+2024-01-08 17:10:11,267 INFO    wandb-upload_0:19121 [upload_job.py:push():131] Uploaded file /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/wandb-summary.json
+2024-01-08 17:10:11,269 INFO    wandb-upload_3:19121 [upload_job.py:push():131] Uploaded file /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/files/requirements.txt
+2024-01-08 17:10:11,470 INFO    Thread-11 (_thread_body):19121 [sender.py:transition_state():617] send defer: 11
+2024-01-08 17:10:11,471 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:11,471 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-08 17:10:11,472 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:11,473 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-01-08 17:10:11,473 INFO    SenderThread:19121 [file_pusher.py:join():181] waiting for file pusher
+2024-01-08 17:10:11,473 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 12
+2024-01-08 17:10:11,473 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:11,473 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-08 17:10:11,474 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:11,474 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-01-08 17:10:11,475 INFO    SenderThread:19121 [file_stream.py:finish():595] file stream finish called
+2024-01-08 17:10:11,714 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-08 17:10:12,291 INFO    SenderThread:19121 [file_stream.py:finish():599] file stream finish is done
+2024-01-08 17:10:12,291 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 13
+2024-01-08 17:10:12,291 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: poll_exit
+2024-01-08 17:10:12,293 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:12,293 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-08 17:10:12,294 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:12,294 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-01-08 17:10:12,294 INFO    SenderThread:19121 [sender.py:transition_state():617] send defer: 14
+2024-01-08 17:10:12,295 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: defer
+2024-01-08 17:10:12,295 INFO    HandlerThread:19121 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-08 17:10:12,297 DEBUG   SenderThread:19121 [sender.py:send():382] send: final
+2024-01-08 17:10:12,297 DEBUG   SenderThread:19121 [sender.py:send():382] send: footer
+2024-01-08 17:10:12,297 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: defer
+2024-01-08 17:10:12,297 INFO    SenderThread:19121 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-01-08 17:10:12,299 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-08 17:10:12,300 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: poll_exit
+2024-01-08 17:10:12,311 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-08 17:10:12,314 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: server_info
+2024-01-08 17:10:12,314 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: server_info
+2024-01-08 17:10:12,356 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-08 17:10:12,356 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-08 17:10:12,357 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: job_info
+2024-01-08 17:10:12,475 DEBUG   SenderThread:19121 [sender.py:send_request():409] send_request: job_info
+2024-01-08 17:10:12,477 DEBUG   HandlerThread:19121 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-08 17:10:12,477 INFO    HandlerThread:19121 [handler.py:finish():866] shutting down handler
+2024-01-08 17:10:13,358 INFO    WriterThread:19121 [datastore.py:close():294] close: /home/jo/code/kaggle/wandb/run-20240108_170835-hmo5xwmy/run-hmo5xwmy.wandb
+2024-01-08 17:10:13,476 INFO    SenderThread:19121 [sender.py:finish():1548] shutting down sender
+2024-01-08 17:10:13,476 INFO    SenderThread:19121 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-08 17:10:13,476 INFO    SenderThread:19121 [file_pusher.py:join():181] waiting for file pusher

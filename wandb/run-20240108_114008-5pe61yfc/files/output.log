@@ -1,0 +1,220 @@
+Epoch 1/100
+17/17 [==============================] - 2s 2ms/step - loss: 0.6795 - binary_accuracy: 0.5830
+Epoch 2/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6772 - binary_accuracy: 0.5830
+Epoch 3/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6761 - binary_accuracy: 0.5830
+Epoch 4/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6751 - binary_accuracy: 0.5830
+Epoch 5/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6744 - binary_accuracy: 0.5830
+Epoch 6/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6739 - binary_accuracy: 0.5830
+Epoch 7/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6734 - binary_accuracy: 0.5830
+Epoch 8/100
+ 1/17 [>.............................] - ETA: 0s - loss: 0.6594 - binary_accuracy: 0.6250
+2024-01-08 11:40:10.364640: I tensorflow/tsl/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2024-01-08 11:40:11.573875: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f6108eb8290 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-01-08 11:40:11.573900: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1650, Compute Capability 7.5
+2024-01-08 11:40:11.608506: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8906
+17/17 [==============================] - 0s 2ms/step - loss: 0.6731 - binary_accuracy: 0.5830
+Epoch 9/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6725 - binary_accuracy: 0.5849
+Epoch 10/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6720 - binary_accuracy: 0.5849
+Epoch 11/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6718 - binary_accuracy: 0.5849
+Epoch 12/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6713 - binary_accuracy: 0.5868
+Epoch 13/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6710 - binary_accuracy: 0.5868
+Epoch 14/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6706 - binary_accuracy: 0.6000
+Epoch 15/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6703 - binary_accuracy: 0.6019
+Epoch 16/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6701 - binary_accuracy: 0.6057
+Epoch 17/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6697 - binary_accuracy: 0.6113
+Epoch 18/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6226
+Epoch 19/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6687 - binary_accuracy: 0.6245
+Epoch 20/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6683 - binary_accuracy: 0.6264
+Epoch 21/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6678 - binary_accuracy: 0.6264
+Epoch 22/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6673 - binary_accuracy: 0.6264
+Epoch 23/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6667 - binary_accuracy: 0.6264
+Epoch 24/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6662 - binary_accuracy: 0.6264
+Epoch 25/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6658 - binary_accuracy: 0.6264
+Epoch 26/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6652 - binary_accuracy: 0.6264
+Epoch 27/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6647 - binary_accuracy: 0.6264
+Epoch 28/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6643 - binary_accuracy: 0.6264
+Epoch 29/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6640 - binary_accuracy: 0.6264
+Epoch 30/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6637 - binary_accuracy: 0.6264
+Epoch 31/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6634 - binary_accuracy: 0.6264
+Epoch 32/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6631 - binary_accuracy: 0.6264
+Epoch 33/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6629 - binary_accuracy: 0.6264
+Epoch 34/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6628 - binary_accuracy: 0.6264
+Epoch 35/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6624 - binary_accuracy: 0.6264
+Epoch 36/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6623 - binary_accuracy: 0.6264
+Epoch 37/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6620 - binary_accuracy: 0.6264
+Epoch 38/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6619 - binary_accuracy: 0.6264
+Epoch 39/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6616 - binary_accuracy: 0.6264
+Epoch 40/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6615 - binary_accuracy: 0.6264
+Epoch 41/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6615 - binary_accuracy: 0.6264
+Epoch 42/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6713 - binary_accuracy: 0.6264
+Epoch 43/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6697 - binary_accuracy: 0.6264
+Epoch 44/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6675 - binary_accuracy: 0.6264
+Epoch 45/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6661 - binary_accuracy: 0.6264
+Epoch 46/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6650 - binary_accuracy: 0.6264
+Epoch 47/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6641 - binary_accuracy: 0.6264
+Epoch 48/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6635 - binary_accuracy: 0.6264
+Epoch 49/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6631 - binary_accuracy: 0.6264
+Epoch 50/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6629 - binary_accuracy: 0.6264
+Epoch 51/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6624 - binary_accuracy: 0.6264
+Epoch 52/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6623 - binary_accuracy: 0.6264
+Epoch 53/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6621 - binary_accuracy: 0.6264
+Epoch 54/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6621 - binary_accuracy: 0.6264
+Epoch 55/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6617 - binary_accuracy: 0.6264
+Epoch 56/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6616 - binary_accuracy: 0.6264
+Epoch 57/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6614 - binary_accuracy: 0.6264
+Epoch 58/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6613 - binary_accuracy: 0.6264
+Epoch 59/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6613 - binary_accuracy: 0.6264
+Epoch 60/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6610 - binary_accuracy: 0.6264
+Epoch 61/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6608 - binary_accuracy: 0.6264
+Epoch 62/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6608 - binary_accuracy: 0.6264
+Epoch 63/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6607 - binary_accuracy: 0.6264
+Epoch 64/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6605 - binary_accuracy: 0.6264
+Epoch 65/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6605 - binary_accuracy: 0.6264
+Epoch 66/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6604 - binary_accuracy: 0.6264
+Epoch 67/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6602 - binary_accuracy: 0.6264
+Epoch 68/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6601 - binary_accuracy: 0.6264
+Epoch 69/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6599 - binary_accuracy: 0.6264
+Epoch 70/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6598 - binary_accuracy: 0.6264
+Epoch 71/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6598 - binary_accuracy: 0.6264
+Epoch 72/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6597 - binary_accuracy: 0.6264
+Epoch 73/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6595 - binary_accuracy: 0.6264
+Epoch 74/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6593 - binary_accuracy: 0.6264
+Epoch 75/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6750 - binary_accuracy: 0.6264
+Epoch 76/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6755 - binary_accuracy: 0.6264
+Epoch 77/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6714 - binary_accuracy: 0.6264
+Epoch 78/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6684 - binary_accuracy: 0.6264
+Epoch 79/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6667 - binary_accuracy: 0.6264
+Epoch 80/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6655 - binary_accuracy: 0.6264
+Epoch 81/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6645 - binary_accuracy: 0.6264
+Epoch 82/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6638 - binary_accuracy: 0.6264
+Epoch 83/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6632 - binary_accuracy: 0.6264
+Epoch 84/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6628 - binary_accuracy: 0.6264
+Epoch 85/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6625 - binary_accuracy: 0.6264
+Epoch 86/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6622 - binary_accuracy: 0.6264
+Epoch 87/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6620 - binary_accuracy: 0.6264
+Epoch 88/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6618 - binary_accuracy: 0.6264
+Epoch 89/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6616 - binary_accuracy: 0.6264
+Epoch 90/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6615 - binary_accuracy: 0.6264
+Epoch 91/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6613 - binary_accuracy: 0.6264
+Epoch 92/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6612 - binary_accuracy: 0.6264
+Epoch 93/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6611 - binary_accuracy: 0.6264
+Epoch 94/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6609 - binary_accuracy: 0.6264
+Epoch 95/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6609 - binary_accuracy: 0.6264
+Epoch 96/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6608 - binary_accuracy: 0.6264
+Epoch 97/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6607 - binary_accuracy: 0.6264
+Epoch 98/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6605 - binary_accuracy: 0.6264
+Epoch 99/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6605 - binary_accuracy: 0.6264
+Epoch 100/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6603 - binary_accuracy: 0.6264
+6/6 [==============================] - 0s 3ms/step - loss: 0.6551 - binary_accuracy: 0.6364
+Loss (Value from loss function) =  0.6550621390342712
+Accuracy (Depends on [metrics]) =  0.6363636255264282
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ dense (Dense)               (None, 16)                176
+ dense_1 (Dense)             (None, 1)                 17
+=================================================================
+Total params: 193 (772.00 Byte)
+Trainable params: 193 (772.00 Byte)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+17/17 [==============================] - 0s 2ms/step - loss: 0.6608 - binary_accuracy: 0.6264

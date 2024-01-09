@@ -1,0 +1,354 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ dense (Dense)               (None, 16)                176
+ dense_1 (Dense)             (None, 1)                 17
+=================================================================
+Total params: 193 (772.00 Byte)
+Trainable params: 193 (772.00 Byte)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Epoch 1/100
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ dense_2 (Dense)             (None, 16)                176
+ dense_3 (Dense)             (None, 1)                 17
+=================================================================
+Total params: 193 (772.00 Byte)
+Trainable params: 193 (772.00 Byte)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Epoch 1/100
+Model: "sequential_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ dense_4 (Dense)             (None, 16)                176
+ dense_5 (Dense)             (None, 1)                 17
+=================================================================
+Total params: 193 (772.00 Byte)
+Trainable params: 193 (772.00 Byte)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+2024-01-08 13:28:42.797210: I tensorflow/tsl/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2024-01-08 13:28:43.993450: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f00145a9500 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-01-08 13:28:43.993474: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1650, Compute Capability 7.5
+2024-01-08 13:28:44.018481: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8906
+2024-01-08 13:28:44.059840: I ./tensorflow/compiler/jit/device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+Epoch 1/100
+17/17 [==============================] - 2s 3ms/step - loss: 0.6718 - binary_accuracy: 0.6094
+Epoch 2/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6691 - binary_accuracy: 0.6226
+Epoch 3/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6672 - binary_accuracy: 0.6264
+Epoch 4/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6655 - binary_accuracy: 0.6264
+Epoch 5/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6643 - binary_accuracy: 0.6264
+Epoch 6/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6636 - binary_accuracy: 0.6264
+Epoch 7/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6629 - binary_accuracy: 0.6264
+Epoch 8/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6625 - binary_accuracy: 0.6264
+Epoch 9/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6617 - binary_accuracy: 0.6264
+Epoch 10/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6612 - binary_accuracy: 0.6264
+Epoch 11/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6609 - binary_accuracy: 0.6264
+Epoch 12/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6604 - binary_accuracy: 0.6264
+Epoch 13/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6601 - binary_accuracy: 0.6264
+Epoch 14/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6598 - binary_accuracy: 0.6264
+Epoch 15/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6597 - binary_accuracy: 0.6264
+Epoch 16/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6596 - binary_accuracy: 0.6264
+Epoch 17/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6593 - binary_accuracy: 0.6264
+Epoch 18/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6592 - binary_accuracy: 0.6264
+Epoch 19/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6587 - binary_accuracy: 0.6264
+Epoch 20/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6586 - binary_accuracy: 0.6264
+Epoch 21/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6584 - binary_accuracy: 0.6264
+Epoch 22/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6583 - binary_accuracy: 0.6264
+Epoch 23/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6581 - binary_accuracy: 0.6264
+Epoch 24/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6580 - binary_accuracy: 0.6264
+Epoch 25/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6580 - binary_accuracy: 0.6264
+Epoch 26/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6577 - binary_accuracy: 0.6264
+Epoch 27/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6576 - binary_accuracy: 0.6264
+Epoch 28/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6575 - binary_accuracy: 0.6264
+Epoch 29/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6574 - binary_accuracy: 0.6264
+Epoch 30/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6572 - binary_accuracy: 0.6264
+Epoch 31/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6572 - binary_accuracy: 0.6264
+Epoch 32/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6570 - binary_accuracy: 0.6264
+Epoch 33/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6569 - binary_accuracy: 0.6264
+Epoch 34/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6570 - binary_accuracy: 0.6264
+Epoch 35/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6567 - binary_accuracy: 0.6264
+Epoch 36/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6568 - binary_accuracy: 0.6264
+Epoch 37/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6565 - binary_accuracy: 0.6264
+Epoch 38/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6565 - binary_accuracy: 0.6264
+Epoch 39/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6564 - binary_accuracy: 0.6264
+Epoch 40/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6564 - binary_accuracy: 0.6264
+Epoch 41/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6564 - binary_accuracy: 0.6264
+Epoch 42/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6562 - binary_accuracy: 0.6264
+Epoch 43/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6561 - binary_accuracy: 0.6264
+Epoch 44/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6561 - binary_accuracy: 0.6264
+Epoch 45/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6559 - binary_accuracy: 0.6264
+Epoch 46/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6558 - binary_accuracy: 0.6264
+Epoch 47/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6558 - binary_accuracy: 0.6264
+Epoch 48/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6558 - binary_accuracy: 0.6264
+Epoch 49/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6557 - binary_accuracy: 0.6264
+Epoch 50/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6557 - binary_accuracy: 0.6264
+Epoch 51/100
+Epoch 73/100=========================] - 0s 3ms/step - loss: 0.6554 - binary_accuracy: 0.6264
+Epoch 52/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6555 - binary_accuracy: 0.6264
+Epoch 53/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6555 - binary_accuracy: 0.6264
+Epoch 54/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6556 - binary_accuracy: 0.6264
+Epoch 55/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6553 - binary_accuracy: 0.6264
+Epoch 56/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6553 - binary_accuracy: 0.6264
+Epoch 57/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6552 - binary_accuracy: 0.6264
+Epoch 58/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6552 - binary_accuracy: 0.6264
+Epoch 59/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6552 - binary_accuracy: 0.6264
+Epoch 60/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6551 - binary_accuracy: 0.6264
+Epoch 61/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6549 - binary_accuracy: 0.6264
+Epoch 62/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6550 - binary_accuracy: 0.6264
+Epoch 63/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6549 - binary_accuracy: 0.6264
+Epoch 64/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6548 - binary_accuracy: 0.6264
+Epoch 65/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6549 - binary_accuracy: 0.6264
+Epoch 66/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6549 - binary_accuracy: 0.6264
+Epoch 67/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6547 - binary_accuracy: 0.6264
+Epoch 68/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6547 - binary_accuracy: 0.6264
+Epoch 69/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6546 - binary_accuracy: 0.6264
+Epoch 70/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6546 - binary_accuracy: 0.6264
+Epoch 71/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6547 - binary_accuracy: 0.6264
+Epoch 72/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6546 - binary_accuracy: 0.6264
+Epoch 73/100=========================] - 0s 3ms/step - loss: 0.6554 - binary_accuracy: 0.6264
+17/17 [==============================] - 0s 2ms/step - loss: 0.6545 - binary_accuracy: 0.6264
+Epoch 74/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6544 - binary_accuracy: 0.6264
+Epoch 75/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6543 - binary_accuracy: 0.6264
+Epoch 76/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6544 - binary_accuracy: 0.6264
+Epoch 77/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6544 - binary_accuracy: 0.6264
+Epoch 78/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6542 - binary_accuracy: 0.6264
+Epoch 79/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6543 - binary_accuracy: 0.6264
+Epoch 80/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6542 - binary_accuracy: 0.6264
+Epoch 81/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6543 - binary_accuracy: 0.6264
+Epoch 82/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6542 - binary_accuracy: 0.6264
+Epoch 83/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6541 - binary_accuracy: 0.6264
+Epoch 84/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6541 - binary_accuracy: 0.6264
+Epoch 85/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6541 - binary_accuracy: 0.6264
+Epoch 86/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6541 - binary_accuracy: 0.6264
+Epoch 87/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6540 - binary_accuracy: 0.6264
+Epoch 88/100
+17/17 [==============================] - 0s 3ms/step - loss: 0.6539 - binary_accuracy: 0.6264
+Epoch 89/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6539 - binary_accuracy: 0.6264
+Epoch 90/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6539 - binary_accuracy: 0.6264
+Epoch 91/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6539 - binary_accuracy: 0.6264
+Epoch 92/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6539 - binary_accuracy: 0.6264
+Epoch 93/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6539 - binary_accuracy: 0.6264
+Epoch 94/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6538 - binary_accuracy: 0.6264
+Epoch 95/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6538 - binary_accuracy: 0.6264
+Epoch 96/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6538 - binary_accuracy: 0.6264
+Epoch 97/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6539 - binary_accuracy: 0.6264
+Epoch 98/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6537 - binary_accuracy: 0.6264
+Epoch 99/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6538 - binary_accuracy: 0.6264
+Epoch 100/100
+17/17 [==============================] - 0s 2ms/step - loss: 0.6537 - binary_accuracy: 0.6264
+17/17 [==============================] - 0s 2ms/step - loss: 0.6537 - binary_accuracy: 0.6264
+17/17 [==============================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 16/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 57/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+Epoch 95/100=========================] - 0s 2ms/step - loss: 0.6694 - binary_accuracy: 0.6264
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Error while calling W&B API: failed to find project jcrone/Titanic (<Response [404]>)
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+wandb: ERROR Error while calling W&B API: failed to find project jcrone/Titanic (<Response [404]>)
+INFO:tensorflow:Assets written to: my_model_03/assets
+16/17 [===========================>..] - ETA: 0s - loss: 0.6556 - binary_accuracy: 0.6211INFO:tensorflow:Assets written to: my_model_04/assets
+16/17 [===========================>..] - ETA: 0s - loss: 0.6556 - binary_accuracy: 0.6211INFO:tensorflow:Assets written to: my_model_04/assets
+wandb: ERROR Error while calling W&B API: failed to find project jcrone/Titanic (<Response [404]>)
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+wandb: ERROR Error while calling W&B API: failed to find project jcrone/Titanic (<Response [404]>)
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+wandb: ERROR Error while calling W&B API: failed to find project jcrone/Titanic (<Response [404]>)
+16/17 [===========================>..] - ETA: 0s - loss: 0.6556 - binary_accuracy: 0.6211INFO:tensorflow:Assets written to: my_model_04/assets
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+16/17 [===========================>..] - ETA: 0s - loss: 0.6556 - binary_accuracy: 0.6211INFO:tensorflow:Assets written to: my_model_04/assets
+16/17 [===========================>..] - ETA: 0s - loss: 0.6556 - binary_accuracy: 0.6211INFO:tensorflow:Assets written to: my_model_04/assets
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)

@@ -1,0 +1,282 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ dense (Dense)               (None, 64)                768
+ dense_1 (Dense)             (None, 64)                4160
+ dense_2 (Dense)             (None, 64)                4160
+ dense_3 (Dense)             (None, 64)                4160
+ dense_4 (Dense)             (None, 64)                4160
+ dense_5 (Dense)             (None, 64)                4160
+ dense_6 (Dense)             (None, 64)                4160
+ dense_7 (Dense)             (None, 64)                4160
+ dense_8 (Dense)             (None, 64)                4160
+ dense_9 (Dense)             (None, 64)                4160
+ dense_10 (Dense)            (None, 64)                4160
+ dense_11 (Dense)            (None, 1)                 65
+=================================================================
+Total params: 42433 (165.75 KB)
+Trainable params: 42433 (165.75 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Epoch 1/50
+2024-01-08 18:17:08.420056: I tensorflow/tsl/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2024-01-08 18:17:09.636079: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f212c6e04e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-01-08 18:17:09.636104: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1650, Compute Capability 7.5
+2024-01-08 18:17:09.640297: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2024-01-08 18:17:09.671548: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8906
+2024-01-08 18:17:09.722911: I ./tensorflow/compiler/jit/device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+13/17 [=====================>........] - ETA: 0s - loss: 0.6199 - binary_accuracy: 0.6683 INFO:tensorflow:Assets written to: my_model_01/assets
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+17/17 [==============================] - 5s 123ms/step - loss: 0.6202 - binary_accuracy: 0.6785 - val_loss: 0.5243 - val_binary_accuracy: 0.7978
+Epoch 2/50
+10/17 [================>.............] - ETA: 0s - loss: 0.4938 - binary_accuracy: 0.8188INFO:tensorflow:Assets written to: my_model_02/assets
+17/17 [==============================] - 2s 99ms/step - loss: 0.5142 - binary_accuracy: 0.8056 - val_loss: 0.5761 - val_binary_accuracy: 0.7978
+Epoch 3/50
+17/17 [==============================] - ETA: 0s - loss: 0.5218 - binary_accuracy: 0.8056INFO:tensorflow:Assets written to: my_model_03/assets
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+17/17 [==============================] - 2s 100ms/step - loss: 0.5218 - binary_accuracy: 0.8056 - val_loss: 0.4365 - val_binary_accuracy: 0.8146
+Epoch 4/50
+ 8/17 [=============>................] - ETA: 0s - loss: 0.5051 - binary_accuracy: 0.7930INFO:tensorflow:Assets written to: my_model_04/assets
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+17/17 [==============================] - 2s 98ms/step - loss: 0.4792 - binary_accuracy: 0.8037 - val_loss: 0.9255 - val_binary_accuracy: 0.8090
+Epoch 5/50
+ 8/17 [=============>................] - ETA: 0s - loss: 0.5489 - binary_accuracy: 0.8008INFO:tensorflow:Assets written to: my_model_05/assets
+INFO:tensorflow:Assets written to: my_model_06/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_06)... Done. 0.0s
+17/17 [==============================] - 2s 98ms/step - loss: 0.4859 - binary_accuracy: 0.8056 - val_loss: 0.6142 - val_binary_accuracy: 0.8202
+Epoch 6/50
+16/17 [===========================>..] - ETA: 0s - loss: 0.5319 - binary_accuracy: 0.8047INFO:tensorflow:Assets written to: my_model_06/assets
+INFO:tensorflow:Assets written to: my_model_07/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_07)... Done. 0.0s
+17/17 [==============================] - 1s 91ms/step - loss: 0.5228 - binary_accuracy: 0.8093 - val_loss: 0.8788 - val_binary_accuracy: 0.8146
+Epoch 7/50
+ 8/17 [=============>................] - ETA: 0s - loss: 0.5118 - binary_accuracy: 0.8320INFO:tensorflow:Assets written to: my_model_07/assets
+INFO:tensorflow:Assets written to: my_model_08/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_08)... Done. 0.0s
+17/17 [==============================] - 2s 110ms/step - loss: 0.5603 - binary_accuracy: 0.8206 - val_loss: 0.8611 - val_binary_accuracy: 0.8146
+Epoch 8/50
+14/17 [=======================>......] - ETA: 0s - loss: 0.4852 - binary_accuracy: 0.8281INFO:tensorflow:Assets written to: my_model_08/assets
+17/17 [==============================] - 2s 99ms/step - loss: 0.5538 - binary_accuracy: 0.8206 - val_loss: 0.9233 - val_binary_accuracy: 0.8146
+Epoch 9/50
+10/17 [================>.............] - ETA: 0s - loss: 0.5859 - binary_accuracy: 0.8281INFO:tensorflow:Assets written to: my_model_09/assets
+INFO:tensorflow:Assets written to: my_model_09/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_09)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_10/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_10)... Done. 0.0s
+17/17 [==============================] - 1s 88ms/step - loss: 0.5782 - binary_accuracy: 0.8206 - val_loss: 0.9610 - val_binary_accuracy: 0.8146
+Epoch 10/50
+ 9/17 [==============>...............] - ETA: 0s - loss: 0.6646 - binary_accuracy: 0.7951INFO:tensorflow:Assets written to: my_model_10/assets
+INFO:tensorflow:Assets written to: my_model_11/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_11)... Done. 0.0s
+17/17 [==============================] - 2s 102ms/step - loss: 0.5365 - binary_accuracy: 0.8224 - val_loss: 0.9173 - val_binary_accuracy: 0.8146
+Epoch 11/50
+10/17 [================>.............] - ETA: 0s - loss: 0.7334 - binary_accuracy: 0.8062INFO:tensorflow:Assets written to: my_model_11/assets
+17/17 [==============================] - 2s 102ms/step - loss: 0.6108 - binary_accuracy: 0.8075 - val_loss: 0.5105 - val_binary_accuracy: 0.8202
+Epoch 12/50
+15/17 [=========================>....] - ETA: 0s - loss: 0.5993 - binary_accuracy: 0.6917INFO:tensorflow:Assets written to: my_model_12/assets
+INFO:tensorflow:Assets written to: my_model_12/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_12)... Done. 0.0s
+17/17 [==============================] - 2s 100ms/step - loss: 0.5937 - binary_accuracy: 0.7009 - val_loss: 0.7261 - val_binary_accuracy: 0.8315
+Epoch 13/50
+15/17 [=========================>....] - ETA: 0s - loss: 0.6052 - binary_accuracy: 0.7875INFO:tensorflow:Assets written to: my_model_13/assets
+INFO:tensorflow:Assets written to: my_model_13/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_13)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_14/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_14)... Done. 0.0s
+17/17 [==============================] - 2s 101ms/step - loss: 0.5896 - binary_accuracy: 0.7869 - val_loss: 0.6486 - val_binary_accuracy: 0.8202
+Epoch 14/50
+14/17 [=======================>......] - ETA: 0s - loss: 0.5614 - binary_accuracy: 0.7991INFO:tensorflow:Assets written to: my_model_14/assets
+INFO:tensorflow:Assets written to: my_model_15/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_15)... Done. 0.0s
+17/17 [==============================] - 2s 94ms/step - loss: 0.5376 - binary_accuracy: 0.7981 - val_loss: 0.8745 - val_binary_accuracy: 0.8146
+Epoch 15/50
+ 9/17 [==============>...............] - ETA: 0s - loss: 0.5213 - binary_accuracy: 0.8021INFO:tensorflow:Assets written to: my_model_15/assets
+17/17 [==============================] - 2s 108ms/step - loss: 0.6146 - binary_accuracy: 0.8206 - val_loss: 1.0049 - val_binary_accuracy: 0.8202
+Epoch 16/50
+12/17 [====================>.........] - ETA: 0s - loss: 0.4907 - binary_accuracy: 0.8385INFO:tensorflow:Assets written to: my_model_16/assets
+INFO:tensorflow:Assets written to: my_model_16/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_16)... Done. 0.0s
+17/17 [==============================] - 2s 94ms/step - loss: 0.5886 - binary_accuracy: 0.8224 - val_loss: 0.9574 - val_binary_accuracy: 0.8146
+Epoch 17/50
+10/17 [================>.............] - ETA: 0s - loss: 0.5310 - binary_accuracy: 0.8281INFO:tensorflow:Assets written to: my_model_17/assets
+INFO:tensorflow:Assets written to: my_model_17/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_17)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_18/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_18)... Done. 0.0s
+17/17 [==============================] - 1s 92ms/step - loss: 0.5603 - binary_accuracy: 0.8224 - val_loss: 0.9391 - val_binary_accuracy: 0.8146
+Epoch 18/50
+17/17 [==============================] - ETA: 0s - loss: 0.5551 - binary_accuracy: 0.8187INFO:tensorflow:Assets written to: my_model_18/assets
+INFO:tensorflow:Assets written to: my_model_19/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_19)... Done. 0.0s
+17/17 [==============================] - 2s 94ms/step - loss: 0.5551 - binary_accuracy: 0.8187 - val_loss: 0.8724 - val_binary_accuracy: 0.8090
+Epoch 19/50
+16/17 [===========================>..] - ETA: 0s - loss: 0.5835 - binary_accuracy: 0.8184INFO:tensorflow:Assets written to: my_model_19/assets
+17/17 [==============================] - 2s 118ms/step - loss: 0.5739 - binary_accuracy: 0.8206 - val_loss: 0.8958 - val_binary_accuracy: 0.8146
+Epoch 20/50
+14/17 [=======================>......] - ETA: 0s - loss: 0.5868 - binary_accuracy: 0.8237INFO:tensorflow:Assets written to: my_model_20/assets
+INFO:tensorflow:Assets written to: my_model_20/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_20)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_21/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_21)... Done. 0.0s
+17/17 [==============================] - 1s 90ms/step - loss: 0.5588 - binary_accuracy: 0.8150 - val_loss: 0.8580 - val_binary_accuracy: 0.8090
+Epoch 21/50
+ 7/17 [===========>..................] - ETA: 0s - loss: 0.4523 - binary_accuracy: 0.7946INFO:tensorflow:Assets written to: my_model_21/assets
+INFO:tensorflow:Assets written to: my_model_22/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_22)... Done. 0.0s
+17/17 [==============================] - 2s 97ms/step - loss: 0.5108 - binary_accuracy: 0.7140 - val_loss: 0.4809 - val_binary_accuracy: 0.7809
+Epoch 22/50
+10/17 [================>.............] - ETA: 0s - loss: 0.4542 - binary_accuracy: 0.8000INFO:tensorflow:Assets written to: my_model_22/assets
+INFO:tensorflow:Assets written to: my_model_23/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_23)... Done. 0.0s
+17/17 [==============================] - 2s 94ms/step - loss: 0.5402 - binary_accuracy: 0.8075 - val_loss: 0.9387 - val_binary_accuracy: 0.8202
+Epoch 23/50
+ 9/17 [==============>...............] - ETA: 0s - loss: 0.5565 - binary_accuracy: 0.8056INFO:tensorflow:Assets written to: my_model_23/assets
+17/17 [==============================] - 2s 111ms/step - loss: 0.5327 - binary_accuracy: 0.8224 - val_loss: 0.4711 - val_binary_accuracy: 0.8034
+Epoch 24/50
+10/17 [================>.............] - ETA: 0s - loss: 0.5356 - binary_accuracy: 0.8062INFO:tensorflow:Assets written to: my_model_24/assets
+INFO:tensorflow:Assets written to: my_model_24/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_24)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_25/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_25)... Done. 0.0s
+17/17 [==============================] - 1s 86ms/step - loss: 0.5279 - binary_accuracy: 0.7944 - val_loss: 0.5006 - val_binary_accuracy: 0.8034
+Epoch 25/50
+10/17 [================>.............] - ETA: 0s - loss: 0.5578 - binary_accuracy: 0.8000INFO:tensorflow:Assets written to: my_model_25/assets
+INFO:tensorflow:Assets written to: my_model_26/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_26)... Done. 0.0s
+17/17 [==============================] - 2s 93ms/step - loss: 0.5401 - binary_accuracy: 0.8037 - val_loss: 0.7351 - val_binary_accuracy: 0.8090
+Epoch 26/50
+ 9/17 [==============>...............] - ETA: 0s - loss: 0.4516 - binary_accuracy: 0.8229INFO:tensorflow:Assets written to: my_model_26/assets
+17/17 [==============================] - 1s 90ms/step - loss: 0.5642 - binary_accuracy: 0.8187 - val_loss: 0.8528 - val_binary_accuracy: 0.8202
+Epoch 27/50
+15/17 [=========================>....] - ETA: 0s - loss: 0.5173 - binary_accuracy: 0.8313INFO:tensorflow:Assets written to: my_model_27/assets
+INFO:tensorflow:Assets written to: my_model_27/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_27)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_28/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_28)... Done. 0.0s
+17/17 [==============================] - 2s 105ms/step - loss: 0.5709 - binary_accuracy: 0.8168 - val_loss: 1.0320 - val_binary_accuracy: 0.8202
+Epoch 28/50
+ 8/17 [=============>................] - ETA: 0s - loss: 0.6371 - binary_accuracy: 0.8203INFO:tensorflow:Assets written to: my_model_28/assets
+INFO:tensorflow:Assets written to: my_model_29/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_29)... Done. 0.0s
+17/17 [==============================] - 3s 175ms/step - loss: 0.6236 - binary_accuracy: 0.8187 - val_loss: 1.0122 - val_binary_accuracy: 0.8146
+Epoch 29/50
+17/17 [==============================] - ETA: 0s - loss: 0.5923 - binary_accuracy: 0.8224INFO:tensorflow:Assets written to: my_model_29/assets
+INFO:tensorflow:Assets written to: my_model_30/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_30)... Done. 0.0s
+17/17 [==============================] - 1s 92ms/step - loss: 0.5923 - binary_accuracy: 0.8224 - val_loss: 0.9644 - val_binary_accuracy: 0.8146
+Epoch 30/50
+11/17 [==================>...........] - ETA: 0s - loss: 0.4425 - binary_accuracy: 0.8438INFO:tensorflow:Assets written to: my_model_30/assets
+17/17 [==============================] - 2s 95ms/step - loss: 0.5769 - binary_accuracy: 0.8224 - val_loss: 0.9533 - val_binary_accuracy: 0.8202
+Epoch 31/50
+12/17 [====================>.........] - ETA: 0s - loss: 0.5984 - binary_accuracy: 0.8255INFO:tensorflow:Assets written to: my_model_31/assets
+INFO:tensorflow:Assets written to: my_model_31/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_31)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_32/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_32)... Done. 0.0s
+17/17 [==============================] - 2s 100ms/step - loss: 0.5729 - binary_accuracy: 0.8168 - val_loss: 0.9577 - val_binary_accuracy: 0.8146
+Epoch 32/50
+12/17 [====================>.........] - ETA: 0s - loss: 0.5738 - binary_accuracy: 0.8255INFO:tensorflow:Assets written to: my_model_32/assets
+INFO:tensorflow:Assets written to: my_model_33/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_33)... Done. 0.0s
+17/17 [==============================] - 2s 94ms/step - loss: 0.5449 - binary_accuracy: 0.8243 - val_loss: 0.9236 - val_binary_accuracy: 0.8258
+Epoch 33/50
+12/17 [====================>.........] - ETA: 0s - loss: 0.5450 - binary_accuracy: 0.8307INFO:tensorflow:Assets written to: my_model_33/assets
+INFO:tensorflow:Assets written to: my_model_34/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_34)... Done. 0.0s
+17/17 [==============================] - 1s 87ms/step - loss: 0.5319 - binary_accuracy: 0.8187 - val_loss: 0.9178 - val_binary_accuracy: 0.8146
+Epoch 34/50
+11/17 [==================>...........] - ETA: 0s - loss: 0.5480 - binary_accuracy: 0.7955INFO:tensorflow:Assets written to: my_model_34/assets
+17/17 [==============================] - 1s 91ms/step - loss: 0.5361 - binary_accuracy: 0.8150 - val_loss: 0.9254 - val_binary_accuracy: 0.8146
+Epoch 35/50
+10/17 [================>.............] - ETA: 0s - loss: 0.5644 - binary_accuracy: 0.8219INFO:tensorflow:Assets written to: my_model_35/assets
+INFO:tensorflow:Assets written to: my_model_35/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_35)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_36/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_36)... Done. 0.0s
+17/17 [==============================] - 2s 104ms/step - loss: 0.5406 - binary_accuracy: 0.8336 - val_loss: 0.9246 - val_binary_accuracy: 0.8146
+Epoch 36/50
+12/17 [====================>.........] - ETA: 0s - loss: 0.4706 - binary_accuracy: 0.8411INFO:tensorflow:Assets written to: my_model_36/assets
+INFO:tensorflow:Assets written to: my_model_37/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_37)... Done. 0.0s
+17/17 [==============================] - 1s 87ms/step - loss: 0.5364 - binary_accuracy: 0.8206 - val_loss: 0.9303 - val_binary_accuracy: 0.8202
+Epoch 37/50
+11/17 [==================>...........] - ETA: 0s - loss: 0.5281 - binary_accuracy: 0.8438INFO:tensorflow:Assets written to: my_model_37/assets
+INFO:tensorflow:Assets written to: my_model_38/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_38)... Done. 0.0s
+17/17 [==============================] - 1s 88ms/step - loss: 0.5304 - binary_accuracy: 0.8355 - val_loss: 0.9263 - val_binary_accuracy: 0.8258
+Epoch 38/50
+ 9/17 [==============>...............] - ETA: 0s - loss: 0.5394 - binary_accuracy: 0.8438INFO:tensorflow:Assets written to: my_model_38/assets
+INFO:tensorflow:Assets written to: my_model_39/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_39)... Done. 0.0s
+17/17 [==============================] - 1s 92ms/step - loss: 0.5308 - binary_accuracy: 0.8280 - val_loss: 0.9182 - val_binary_accuracy: 0.8258
+Epoch 39/50
+15/17 [=========================>....] - ETA: 0s - loss: 0.5331 - binary_accuracy: 0.8375INFO:tensorflow:Assets written to: my_model_39/assets
+17/17 [==============================] - 2s 107ms/step - loss: 0.5318 - binary_accuracy: 0.8243 - val_loss: 0.9269 - val_binary_accuracy: 0.8090
+Epoch 40/50
+12/17 [====================>.........] - ETA: 0s - loss: 0.5128 - binary_accuracy: 0.8490INFO:tensorflow:Assets written to: my_model_40/assets
+INFO:tensorflow:Assets written to: my_model_40/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_40)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_41/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_41)... Done. 0.0s
+17/17 [==============================] - 1s 87ms/step - loss: 0.5242 - binary_accuracy: 0.8393 - val_loss: 0.8637 - val_binary_accuracy: 0.8090
+Epoch 41/50
+13/17 [=====================>........] - ETA: 0s - loss: 0.5075 - binary_accuracy: 0.8245INFO:tensorflow:Assets written to: my_model_41/assets
+INFO:tensorflow:Assets written to: my_model_42/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_42)... Done. 0.0s
+17/17 [==============================] - 2s 99ms/step - loss: 0.4777 - binary_accuracy: 0.8187 - val_loss: 0.8566 - val_binary_accuracy: 0.8146
+Epoch 42/50
+10/17 [================>.............] - ETA: 0s - loss: 0.6451 - binary_accuracy: 0.8313INFO:tensorflow:Assets written to: my_model_42/assets
+INFO:tensorflow:Assets written to: my_model_43/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_43)... Done. 0.0s
+17/17 [==============================] - 2s 114ms/step - loss: 0.5220 - binary_accuracy: 0.8374 - val_loss: 0.9227 - val_binary_accuracy: 0.8146
+Epoch 43/50
+16/17 [===========================>..] - ETA: 0s - loss: 0.5376 - binary_accuracy: 0.8340INFO:tensorflow:Assets written to: my_model_43/assets
+17/17 [==============================] - 2s 122ms/step - loss: 0.5254 - binary_accuracy: 0.8355 - val_loss: 0.9220 - val_binary_accuracy: 0.8090
+Epoch 44/50
+13/17 [=====================>........] - ETA: 0s - loss: 0.5624 - binary_accuracy: 0.8389INFO:tensorflow:Assets written to: my_model_44/assets
+INFO:tensorflow:Assets written to: my_model_44/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_44)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_45/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_45)... Done. 0.0s
+17/17 [==============================] - 1s 87ms/step - loss: 0.5172 - binary_accuracy: 0.8393 - val_loss: 0.9260 - val_binary_accuracy: 0.8146
+Epoch 45/50
+13/17 [=====================>........] - ETA: 0s - loss: 0.5034 - binary_accuracy: 0.8389INFO:tensorflow:Assets written to: my_model_45/assets
+INFO:tensorflow:Assets written to: my_model_46/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_46)... Done. 0.0s
+17/17 [==============================] - 1s 88ms/step - loss: 0.5201 - binary_accuracy: 0.8374 - val_loss: 0.9253 - val_binary_accuracy: 0.8146
+Epoch 46/50
+10/17 [================>.............] - ETA: 0s - loss: 0.4857 - binary_accuracy: 0.8438INFO:tensorflow:Assets written to: my_model_46/assets
+INFO:tensorflow:Assets written to: my_model_47/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_47)... Done. 0.0s
+17/17 [==============================] - 2s 100ms/step - loss: 0.5152 - binary_accuracy: 0.8449 - val_loss: 0.9202 - val_binary_accuracy: 0.8315
+Epoch 47/50
+15/17 [=========================>....] - ETA: 0s - loss: 0.4985 - binary_accuracy: 0.8396INFO:tensorflow:Assets written to: my_model_47/assets
+INFO:tensorflow:Assets written to: my_model_48/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_48)... Done. 0.0s
+17/17 [==============================] - 2s 110ms/step - loss: 0.5386 - binary_accuracy: 0.8374 - val_loss: 0.9336 - val_binary_accuracy: 0.8258
+Epoch 48/50
+10/17 [================>.............] - ETA: 0s - loss: 0.4977 - binary_accuracy: 0.8469INFO:tensorflow:Assets written to: my_model_48/assets
+17/17 [==============================] - 1s 91ms/step - loss: 0.5226 - binary_accuracy: 0.8393 - val_loss: 0.9300 - val_binary_accuracy: 0.8146
+Epoch 49/50
+17/17 [==============================] - ETA: 0s - loss: 0.5897 - binary_accuracy: 0.8430INFO:tensorflow:Assets written to: my_model_49/assets
+INFO:tensorflow:Assets written to: my_model_49/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_49)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_50/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_50)... Done. 0.0s
+17/17 [==============================] - 2s 100ms/step - loss: 0.5897 - binary_accuracy: 0.8430 - val_loss: 1.0120 - val_binary_accuracy: 0.7978
+Epoch 50/50
+12/17 [====================>.........] - ETA: 0s - loss: 0.5345 - binary_accuracy: 0.8333INFO:tensorflow:Assets written to: my_model_50/assets
+17/17 [==============================] - 2s 99ms/step - loss: 0.5499 - binary_accuracy: 0.8280 - val_loss: 0.9287 - val_binary_accuracy: 0.8146
+CPU times: user 1min 9s, sys: 1.34 s, total: 1min 11s
+Wall time: 1min 24s
+6/6 [==============================] - 0s 2ms/step - loss: 0.9287 - binary_accuracy: 0.8146
+Loss (Value from loss function) =  0.928680956363678
+Accuracy (Depends on [metrics]) =  0.8146067261695862

@@ -1,0 +1,1 @@
+{"epoch/loss": 0.6320680379867554, "epoch/binary_accuracy": 0.6168224215507507, "epoch/val_loss": 0.6202391982078552, "epoch/val_binary_accuracy": 0.6348314881324768, "epoch/epoch": 29, "epoch/learning_rate": 0.0020000000949949026, "_timestamp": 1704733019.8476946, "_runtime": 46.38394260406494, "_step": 30, "Test Error Rate": 36.52, "_wandb": {"runtime": 45}}

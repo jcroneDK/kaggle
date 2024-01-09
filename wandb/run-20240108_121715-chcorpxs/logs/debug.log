@@ -1,0 +1,69 @@
+2024-01-08 12:17:15,928 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2024-01-08 12:17:15,928 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Configure stats pid to 21055
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Loading settings from /home/jo/.config/wandb/settings
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Loading settings from /home/jo/code/kaggle/wandb/settings
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***'}
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_init.py:_log_setup():524] Logging user logs to /home/jo/code/kaggle/wandb/run-20240108_121715-chcorpxs/logs/debug.log
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_init.py:_log_setup():525] Logging internal logs to /home/jo/code/kaggle/wandb/run-20240108_121715-chcorpxs/logs/debug-internal.log
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f61503b1540>
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_init.py:init():564] calling init triggers
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.005, 'momentum': 0.9, 'epochs': 5, 'loss_function': <keras.src.losses.BinaryCrossentropy object at 0x7f61501088b0>, 'architecture': 'MLP'}
+2024-01-08 12:17:15,929 INFO    MainThread:21055 [wandb_init.py:init():589] re-initializing run, found existing run on stack: zs9wzu08
+2024-01-08 12:17:15,932 INFO    MainThread:21055 [wandb_run.py:_finish():1962] finishing run jcrone/Titanic/zs9wzu08
+2024-01-08 12:17:15,932 INFO    MainThread:21055 [wandb_run.py:_atexit_cleanup():2202] got exitcode: 0
+2024-01-08 12:17:15,932 INFO    MainThread:21055 [wandb_run.py:_restore():2185] restore
+2024-01-08 12:17:15,932 INFO    MainThread:21055 [wandb_run.py:_restore():2191] restore done
+2024-01-08 12:17:20,597 INFO    MainThread:21055 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2024-01-08 12:17:20,598 INFO    MainThread:21055 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2024-01-08 12:17:20,605 INFO    MainThread:21055 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2024-01-08 12:17:20,671 INFO    MainThread:21055 [wandb_init.py:init():614] starting backend
+2024-01-08 12:17:20,671 INFO    MainThread:21055 [wandb_init.py:init():618] setting up manager
+2024-01-08 12:17:20,677 INFO    MainThread:21055 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-01-08 12:17:20,677 INFO    MainThread:21055 [wandb_init.py:init():624] backend started and connected
+2024-01-08 12:17:20,692 INFO    MainThread:21055 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-01-08 12:17:20,693 INFO    MainThread:21055 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-01-08 12:17:20,693 INFO    MainThread:21055 [wandb_init.py:init():716] updated telemetry
+2024-01-08 12:17:20,699 INFO    MainThread:21055 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-01-08 12:17:22,468 INFO    MainThread:21055 [wandb_run.py:_on_init():2254] communicating current version
+2024-01-08 12:17:22,688 INFO    MainThread:21055 [wandb_run.py:_on_init():2263] got version response 
+2024-01-08 12:17:22,688 INFO    MainThread:21055 [wandb_init.py:init():800] starting run threads in backend
+2024-01-08 12:17:22,756 INFO    MainThread:21055 [wandb_run.py:_console_start():2233] atexit reg
+2024-01-08 12:17:22,756 INFO    MainThread:21055 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-01-08 12:17:22,756 INFO    MainThread:21055 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-01-08 12:17:22,757 INFO    MainThread:21055 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-01-08 12:17:22,758 INFO    MainThread:21055 [wandb_init.py:init():841] run started, returning control to user process
+2024-01-08 12:17:22,759 INFO    MainThread:21055 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-08 12:17:22,759 INFO    MainThread:21055 [wandb_init.py:_pause_backend():435] pausing backend
+2024-01-08 12:18:05,514 INFO    MainThread:21055 [wandb_init.py:_resume_backend():440] resuming backend
+2024-01-08 12:18:05,556 INFO    MainThread:21055 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-08 12:18:05,557 INFO    MainThread:21055 [wandb_init.py:_pause_backend():435] pausing backend
+2024-01-08 12:18:14,076 INFO    MainThread:21055 [wandb_init.py:_resume_backend():440] resuming backend
+2024-01-08 12:18:18,884 INFO    MainThread:21055 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-08 12:18:18,884 INFO    MainThread:21055 [wandb_init.py:_pause_backend():435] pausing backend
+2024-01-08 12:21:00,437 INFO    MainThread:21055 [wandb_init.py:_resume_backend():440] resuming backend
+2024-01-08 12:21:00,454 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2024-01-08 12:21:00,454 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Configure stats pid to 21055
+2024-01-08 12:21:00,454 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Loading settings from /home/jo/.config/wandb/settings
+2024-01-08 12:21:00,454 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Loading settings from /home/jo/code/kaggle/wandb/settings
+2024-01-08 12:21:00,454 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***'}
+2024-01-08 12:21:00,454 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-08 12:21:00,454 INFO    MainThread:21055 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-01-08 12:21:00,455 INFO    MainThread:21055 [wandb_init.py:_log_setup():524] Logging user logs to /home/jo/code/kaggle/wandb/run-20240108_122100-aqoo8g2p/logs/debug.log
+2024-01-08 12:21:00,455 INFO    MainThread:21055 [wandb_init.py:_log_setup():525] Logging internal logs to /home/jo/code/kaggle/wandb/run-20240108_122100-aqoo8g2p/logs/debug-internal.log
+2024-01-08 12:21:00,455 INFO    MainThread:21055 [wandb_init.py:init():564] calling init triggers
+2024-01-08 12:21:00,455 INFO    MainThread:21055 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.005, 'momentum': 0.9, 'epochs': 5, 'loss_function': <keras.src.losses.BinaryCrossentropy object at 0x7f61504a3a00>, 'architecture': 'MLP'}
+2024-01-08 12:21:00,455 INFO    MainThread:21055 [wandb_init.py:init():589] re-initializing run, found existing run on stack: chcorpxs
+2024-01-08 12:21:00,457 INFO    MainThread:21055 [wandb_run.py:_finish():1962] finishing run jcrone/Titanic/chcorpxs
+2024-01-08 12:21:00,458 ERROR   MainThread:21055 [jupyter.py:save_history():437] Run pip install nbformat to save notebook history
+2024-01-08 12:21:00,458 INFO    MainThread:21055 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-01-08 12:21:00,458 INFO    MainThread:21055 [wandb_init.py:_jupyter_teardown():452] cleaning up jupyter logic
+2024-01-08 12:21:00,458 INFO    MainThread:21055 [wandb_run.py:_atexit_cleanup():2202] got exitcode: 0
+2024-01-08 12:21:00,458 INFO    MainThread:21055 [wandb_run.py:_restore():2185] restore
+2024-01-08 12:21:00,459 INFO    MainThread:21055 [wandb_run.py:_restore():2191] restore done
+2024-01-08 12:21:05,575 INFO    MainThread:21055 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2024-01-08 12:21:05,575 INFO    MainThread:21055 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2024-01-08 12:21:05,580 INFO    MainThread:21055 [wandb_run.py:_footer_sync_info():3796] logging synced files

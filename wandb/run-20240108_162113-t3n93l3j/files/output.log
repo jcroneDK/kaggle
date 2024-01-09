@@ -1,0 +1,57 @@
+2024-01-08 16:21:26.378964: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-01-08 16:21:26.422444: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-01-08 16:21:26.426416: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-01-08 16:21:26.431292: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-01-08 16:21:26.435051: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-01-08 16:21:26.438623: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-01-08 16:21:26.589996: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-01-08 16:21:26.591495: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-01-08 16:21:26.592944: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2024-01-08 16:21:26.594334: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1886] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2622 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1650, pci bus id: 0000:01:00.0, compute capability: 7.5
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ dense (Dense)               (None, 16)                160
+ dense_1 (Dense)             (None, 1)                 17
+=================================================================
+Total params: 177 (708.00 Byte)
+Trainable params: 177 (708.00 Byte)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+2024-01-08 16:23:00.750208: I tensorflow/tsl/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2024-01-08 16:23:02.016169: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f17ec96cb70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-01-08 16:23:02.016194: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1650, Compute Capability 7.5
+2024-01-08 16:23:02.040712: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8906
+2024-01-08 16:23:02.070765: I ./tensorflow/compiler/jit/device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+Epoch 1/5
+ 1/17 [>.............................] - ETA: 28s - loss: 0.6461 - binary_accuracy: 0.6875
+INFO:tensorflow:Assets written to: my_model_01/assets
+
+ 1/17 [>.............................] - ETA: 28s - loss: 0.6461 - binary_accuracy: 0.6875INFO:tensorflow:Assets written to: my_model_01/assets
+17/17 [==============================] - 3s 69ms/step - loss: 0.6676 - binary_accuracy: 0.6168 - val_loss: 0.6536 - val_binary_accuracy: 0.6348
+Epoch 2/5
+14/17 [=======================>......] - ETA: 0s - loss: 0.6614 - binary_accuracy: 0.6138INFO:tensorflow:Assets written to: my_model_02/assets
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+17/17 [==============================] - 1s 46ms/step - loss: 0.6596 - binary_accuracy: 0.6168 - val_loss: 0.6464 - val_binary_accuracy: 0.6348
+Epoch 3/5
+16/17 [===========================>..] - ETA: 0s - loss: 0.6541 - binary_accuracy: 0.6152INFO:tensorflow:Assets written to: my_model_03/assets
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+17/17 [==============================] - 1s 44ms/step - loss: 0.6531 - binary_accuracy: 0.6168 - val_loss: 0.6397 - val_binary_accuracy: 0.6348
+Epoch 4/5
+13/17 [=====================>........] - ETA: 0s - loss: 0.6420 - binary_accuracy: 0.6274INFO:tensorflow:Assets written to: my_model_04/assets
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+17/17 [==============================] - 1s 51ms/step - loss: 0.6468 - binary_accuracy: 0.6168 - val_loss: 0.6325 - val_binary_accuracy: 0.6348
+Epoch 5/5
+15/17 [=========================>....] - ETA: 0s - loss: 0.6395 - binary_accuracy: 0.6187INFO:tensorflow:Assets written to: my_model_05/assets
+17/17 [==============================] - 1s 43ms/step - loss: 0.6403 - binary_accuracy: 0.6168 - val_loss: 0.6260 - val_binary_accuracy: 0.6348
+CPU times: user 4.34 s, sys: 215 ms, total: 4.55 s
+Wall time: 5.99 s
+6/6 [==============================] - 0s 2ms/step - loss: 0.6260 - binary_accuracy: 0.6348
+Loss (Value from loss function) =  0.6259888410568237
+Accuracy (Depends on [metrics]) =  0.6348314881324768

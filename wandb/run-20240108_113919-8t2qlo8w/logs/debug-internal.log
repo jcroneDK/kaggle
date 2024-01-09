@@ -1,0 +1,65 @@
+2024-01-08 11:39:19,300 INFO    StreamThr :20917 [internal.py:wandb_internal():86] W&B internal server running at pid: 20917, started at: 2024-01-08 11:39:19.300189
+2024-01-08 11:39:19,302 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: status
+2024-01-08 11:39:19,307 INFO    WriterThread:20917 [datastore.py:open_for_write():85] open: /home/jo/code/kaggle/wandb/run-20240108_113919-8t2qlo8w/run-8t2qlo8w.wandb
+2024-01-08 11:39:19,308 DEBUG   SenderThread:20917 [sender.py:send():380] send: header
+2024-01-08 11:39:19,314 DEBUG   SenderThread:20917 [sender.py:send():380] send: run
+2024-01-08 11:39:19,911 INFO    SenderThread:20917 [dir_watcher.py:__init__():211] watching files in: /home/jo/code/kaggle/wandb/run-20240108_113919-8t2qlo8w/files
+2024-01-08 11:39:19,912 INFO    SenderThread:20917 [sender.py:_start_run_threads():1124] run started: 8t2qlo8w with start time 1704710359.300279
+2024-01-08 11:39:19,922 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: check_version
+2024-01-08 11:39:19,922 DEBUG   SenderThread:20917 [sender.py:send_request():407] send_request: check_version
+2024-01-08 11:39:20,061 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: run_start
+2024-01-08 11:39:20,093 DEBUG   HandlerThread:20917 [system_info.py:__init__():32] System info init
+2024-01-08 11:39:20,094 DEBUG   HandlerThread:20917 [system_info.py:__init__():47] System info init done
+2024-01-08 11:39:20,094 INFO    HandlerThread:20917 [system_monitor.py:start():194] Starting system monitor
+2024-01-08 11:39:20,094 INFO    SystemMonitor:20917 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-08 11:39:20,097 INFO    HandlerThread:20917 [system_monitor.py:probe():214] Collecting system info
+2024-01-08 11:39:20,099 INFO    SystemMonitor:20917 [interfaces.py:start():190] Started cpu monitoring
+2024-01-08 11:39:20,100 INFO    SystemMonitor:20917 [interfaces.py:start():190] Started disk monitoring
+2024-01-08 11:39:20,102 INFO    SystemMonitor:20917 [interfaces.py:start():190] Started gpu monitoring
+2024-01-08 11:39:20,103 INFO    SystemMonitor:20917 [interfaces.py:start():190] Started memory monitoring
+2024-01-08 11:39:20,105 INFO    SystemMonitor:20917 [interfaces.py:start():190] Started network monitoring
+2024-01-08 11:39:20,119 DEBUG   HandlerThread:20917 [system_info.py:probe():196] Probing system
+2024-01-08 11:39:20,124 DEBUG   HandlerThread:20917 [system_info.py:_probe_git():181] Probing git
+2024-01-08 11:39:20,135 DEBUG   HandlerThread:20917 [system_info.py:_probe_git():189] Probing git done
+2024-01-08 11:39:20,135 DEBUG   HandlerThread:20917 [system_info.py:probe():244] Probing system done
+2024-01-08 11:39:20,135 DEBUG   HandlerThread:20917 [system_monitor.py:probe():223] {'os': 'Linux-6.2.0-39-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-01-08T10:39:20.119657', 'startedAt': '2024-01-08T10:39:19.296756', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/jcroneDK/kaggle.git', 'commit': 'afbab9a7196adc9f17f693d9ffeb5e64f216bfe8'}, 'email': 'jcrone@pm.me', 'root': '/home/jo/code/kaggle', 'host': 'jo-Ub', 'username': 'jo', 'executable': '/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 1.7998333333333336, 'min': 800.0, 'max': 4500.0}, 'cpu_freq_per_core': [{'current': 1.8, 'min': 800.0, 'max': 4500.0}, {'current': 1.8, 'min': 800.0, 'max': 4500.0}, {'current': 1.8, 'min': 800.0, 'max': 4500.0}, {'current': 1.798, 'min': 800.0, 'max': 4500.0}, {'current': 1.799, 'min': 800.0, 'max': 4500.0}, {'current': 1.8, 'min': 800.0, 'max': 4500.0}, {'current': 1.8, 'min': 800.0, 'max': 4500.0}, {'current': 1.8, 'min': 800.0, 'max': 4500.0}, {'current': 1.8, 'min': 800.0, 'max': 4500.0}, {'current': 1.799, 'min': 800.0, 'max': 4500.0}, {'current': 1.799, 'min': 800.0, 'max': 4500.0}, {'current': 1.8, 'min': 800.0, 'max': 4500.0}], 'disk': {'/': {'total': 287.30792236328125, 'used': 111.88987350463867}}, 'gpu': 'NVIDIA GeForce GTX 1650', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1650', 'memory_total': 4294967296}], 'memory': {'total': 30.948562622070312}}
+2024-01-08 11:39:20,135 INFO    HandlerThread:20917 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-08 11:39:20,135 INFO    HandlerThread:20917 [system_monitor.py:probe():227] Publishing system info
+2024-01-08 11:39:20,135 DEBUG   HandlerThread:20917 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-01-08 11:39:20,136 DEBUG   HandlerThread:20917 [system_info.py:_save_pip():68] Saving pip packages done
+2024-01-08 11:39:20,136 INFO    HandlerThread:20917 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-08 11:39:20,143 DEBUG   SenderThread:20917 [sender.py:send():380] send: files
+2024-01-08 11:39:20,143 INFO    SenderThread:20917 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2024-01-08 11:39:20,157 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-08 11:39:20,158 DEBUG   SenderThread:20917 [sender.py:send_request():407] send_request: stop_status
+2024-01-08 11:39:20,159 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-08 11:39:20,159 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: pause
+2024-01-08 11:39:20,159 INFO    HandlerThread:20917 [handler.py:handle_request_pause():705] stopping system metrics thread
+2024-01-08 11:39:20,160 INFO    HandlerThread:20917 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-08 11:39:20,160 INFO    HandlerThread:20917 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-08 11:39:20,160 DEBUG   SystemMonitor:20917 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-08 11:39:20,160 DEBUG   SystemMonitor:20917 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-08 11:39:20,160 DEBUG   SystemMonitor:20917 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-08 11:39:20,161 INFO    HandlerThread:20917 [interfaces.py:finish():202] Joined disk monitor
+2024-01-08 11:39:20,236 INFO    HandlerThread:20917 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-08 11:39:20,236 INFO    HandlerThread:20917 [interfaces.py:finish():202] Joined memory monitor
+2024-01-08 11:39:20,236 INFO    HandlerThread:20917 [interfaces.py:finish():202] Joined network monitor
+2024-01-08 11:39:20,528 DEBUG   SenderThread:20917 [sender.py:send():380] send: telemetry
+2024-01-08 11:39:20,529 DEBUG   SenderThread:20917 [sender.py:send():380] send: stats
+2024-01-08 11:39:20,917 INFO    Thread-12 :20917 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jo/code/kaggle/wandb/run-20240108_113919-8t2qlo8w/files/wandb-metadata.json
+2024-01-08 11:39:20,918 INFO    Thread-12 :20917 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jo/code/kaggle/wandb/run-20240108_113919-8t2qlo8w/files/requirements.txt
+2024-01-08 11:39:21,037 INFO    wandb-upload_0:20917 [upload_job.py:push():131] Uploaded file /tmp/tmpcp_enljvwandb/y728ltzk-wandb-metadata.json
+2024-01-08 11:39:24,531 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 11:39:29,533 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 11:39:34,535 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 11:39:35,158 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-08 11:39:35,159 DEBUG   SenderThread:20917 [sender.py:send_request():407] send_request: stop_status
+2024-01-08 11:39:35,199 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-08 11:39:40,380 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 11:39:45,381 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 11:39:50,157 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-08 11:39:50,157 DEBUG   SenderThread:20917 [sender.py:send_request():407] send_request: stop_status
+2024-01-08 11:39:50,198 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-08 11:39:51,350 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: status_report
+2024-01-08 11:39:51,929 INFO    Thread-12 :20917 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jo/code/kaggle/wandb/run-20240108_113919-8t2qlo8w/files/config.yaml
+2024-01-08 11:39:56,663 DEBUG   HandlerThread:20917 [handler.py:handle_request():146] handle_request: status_report

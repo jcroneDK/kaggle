@@ -1,0 +1,108 @@
+
+Epoch 1/5
+Epoch 1/5
+ 1/17 [>.............................] - ETA: 6s - loss: 2.4008 - accuracy: 0.0000e+00INFO:tensorflow:Assets written to: my_model_01/assets
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+17/17 [==============================] - 1s 61ms/step - loss: 0.3671 - accuracy: 0.1626 - val_loss: -1.6684 - val_accuracy: 0.2247
+Epoch 2/5
+ 1/17 [>.............................] - ETA: 0s - loss: -1.3054 - accuracy: 0.3438INFO:tensorflow:Assets written to: my_model_02/assets
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+17/17 [==============================] - 2s 113ms/step - loss: -14.9107 - accuracy: 0.2505 - val_loss: -20.5608 - val_accuracy: 0.2247
+Epoch 3/5
+ 1/17 [>.............................] - ETA: 0s - loss: -19.5381 - accuracy: 0.3125INFO:tensorflow:Assets written to: my_model_03/assets
+17/17 [==============================] - 1s 39ms/step - loss: -19.6102 - accuracy: 0.2505 - val_loss: -20.5608 - val_accuracy: 0.2247
+Epoch 4/5
+13/17 [=====================>........] - ETA: 0s - loss: -19.6847 - accuracy: 0.2500INFO:tensorflow:Assets written to: my_model_04/assets
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+17/17 [==============================] - 1s 52ms/step - loss: -19.6102 - accuracy: 0.2505 - val_loss: -20.5608 - val_accuracy: 0.2247
+Epoch 5/5
+ 1/17 [>.............................] - ETA: 0s - loss: -16.6789 - accuracy: 0.3750INFO:tensorflow:Assets written to: my_model_05/assets
+17/17 [==============================] - 1s 40ms/step - loss: -19.6102 - accuracy: 0.2505 - val_loss: -20.5608 - val_accuracy: 0.2247
+CPU times: user 2.94 s, sys: 109 ms, total: 3.05 s
+Wall time: 5.4 s
+Model: "sequential_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ dense_8 (Dense)             (None, 16)                160
+ dense_9 (Dense)             (None, 1)                 17
+=================================================================
+Total params: 177 (708.00 Byte)
+Trainable params: 177 (708.00 Byte)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Model: "sequential_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ dense_10 (Dense)            (None, 16)                160
+ dense_11 (Dense)            (None, 1)                 17
+=================================================================
+Total params: 177 (708.00 Byte)
+Trainable params: 177 (708.00 Byte)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Epoch 1/5
+ 1/17 [>.............................] - ETA: 6s - loss: 3.4219 - binary_accuracy: 0.0000e+00INFO:tensorflow:Assets written to: my_model_01/assets
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+17/17 [==============================] - 1s 59ms/step - loss: 0.4249 - binary_accuracy: 0.1495 - val_loss: -3.1388 - val_binary_accuracy: 0.2247
+Epoch 2/5
+14/17 [=======================>......] - ETA: 0s - loss: -17.8918 - binary_accuracy: 0.2522INFO:tensorflow:Assets written to: my_model_02/assets
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+17/17 [==============================] - 1s 44ms/step - loss: -18.3172 - binary_accuracy: 0.2505 - val_loss: -20.5608 - val_binary_accuracy: 0.2247
+Epoch 3/5
+ 1/17 [>.............................] - ETA: 0s - loss: -19.5381 - binary_accuracy: 0.3125INFO:tensorflow:Assets written to: my_model_03/assets
+17/17 [==============================] - 1s 38ms/step - loss: -19.6102 - binary_accuracy: 0.2505 - val_loss: -20.5608 - val_binary_accuracy: 0.2247
+Epoch 4/5
+ 1/17 [>.............................] - ETA: 0s - loss: -22.3973 - binary_accuracy: 0.2188INFO:tensorflow:Assets written to: my_model_04/assets
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+17/17 [==============================] - 1s 46ms/step - loss: -19.6102 - binary_accuracy: 0.2505 - val_loss: -20.5608 - val_binary_accuracy: 0.2247
+Epoch 5/5
+10/17 [================>.............] - ETA: 0s - loss: -19.5857 - binary_accuracy: 0.2625INFO:tensorflow:Assets written to: my_model_05/assets
+17/17 [==============================] - 1s 45ms/step - loss: -19.6102 - binary_accuracy: 0.2505 - val_loss: -20.5608 - val_binary_accuracy: 0.2247
+CPU times: user 2.65 s, sys: 137 ms, total: 2.79 s
+Wall time: 4.2 s
+UsageError: Line magic function `%%time` not found.
+Epoch 1/5
+ 1/17 [>.............................] - ETA: 2s - loss: -21.9208 - binary_accuracy: 0.1562INFO:tensorflow:Assets written to: my_model_01/assets
+INFO:tensorflow:Assets written to: my_model_01/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_01)... Done. 0.0s
+17/17 [==============================] - 1s 68ms/step - loss: -19.6102 - binary_accuracy: 0.2505 - val_loss: -20.5608 - val_binary_accuracy: 0.2247
+Epoch 2/5
+ 1/17 [>.............................] - ETA: 0s - loss: -15.7258 - binary_accuracy: 0.3438INFO:tensorflow:Assets written to: my_model_02/assets
+INFO:tensorflow:Assets written to: my_model_02/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_02)... Done. 0.0s
+INFO:tensorflow:Assets written to: my_model_03/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_03)... Done. 0.0s
+17/17 [==============================] - 1s 46ms/step - loss: -19.6102 - binary_accuracy: 0.2505 - val_loss: -20.5608 - val_binary_accuracy: 0.2247
+Epoch 3/5
+12/17 [====================>.........] - ETA: 0s - loss: -20.2529 - binary_accuracy: 0.2292INFO:tensorflow:Assets written to: my_model_03/assets
+17/17 [==============================] - 1s 42ms/step - loss: -19.6102 - binary_accuracy: 0.2505 - val_loss: -20.5608 - val_binary_accuracy: 0.2247
+Epoch 4/5
+ 1/17 [>.............................] - ETA: 0s - loss: -22.3973 - binary_accuracy: 0.2188INFO:tensorflow:Assets written to: my_model_04/assets
+INFO:tensorflow:Assets written to: my_model_04/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_04)... Done. 0.0s
+17/17 [==============================] - 1s 40ms/step - loss: -19.6102 - binary_accuracy: 0.2505 - val_loss: -20.5608 - val_binary_accuracy: 0.2247
+Epoch 5/5
+12/17 [====================>.........] - ETA: 0s - loss: -19.4984 - binary_accuracy: 0.2656INFO:tensorflow:Assets written to: my_model_05/assets
+INFO:tensorflow:Assets written to: my_model_05/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (./my_model_05)... Done. 0.0s
+17/17 [==============================] - 1s 52ms/step - loss: -19.6102 - binary_accuracy: 0.2505 - val_loss: -20.5608 - val_binary_accuracy: 0.2247
+CPU times: user 2.66 s, sys: 106 ms, total: 2.77 s
+Wall time: 4.26 s
+6/6 [==============================] - 0s 3ms/step - loss: -20.5608 - binary_accuracy: 0.2247
+Loss (Value from loss function) =  -20.560771942138672

@@ -1,0 +1,107 @@
+{
+    "os": "Linux-6.2.0-39-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-01-08T16:58:50.889558",
+    "startedAt": "2024-01-08T16:58:49.852642",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/jcroneDK/kaggle.git",
+        "commit": "afbab9a7196adc9f17f693d9ffeb5e64f216bfe8"
+    },
+    "email": "jcrone@pm.me",
+    "root": "/home/jo/code/kaggle",
+    "host": "jo-Ub",
+    "username": "jo",
+    "executable": "/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 4.080583333333334,
+        "min": 800.0,
+        "max": 4500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.899,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.09,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.013,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.034,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.043,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.059,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.068,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.099,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.058,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3.996,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.176,
+            "min": 800.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4.093,
+            "min": 800.0,
+            "max": 4500.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 287.30792236328125,
+            "used": 111.81969451904297
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1650",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 30.948566436767578
+    }
+}
